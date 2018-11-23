@@ -13,8 +13,11 @@ $app->config(
 // Set singleton value
 $app->container->singleton( 'db', function () {
         try {
+/*
             $db = new PDO( 'mysql:host=localhost;dbname=hybridauth', 'slim', 'slim',
                 [ \PDO::ATTR_PERSISTENT => false ] );
+*/
+            $db = new PDO('sqlite:messaging.sqlite3');
         } catch ( PDOException $e ) {
             die( 'Error!: ' . $e->getMessage() );
         }
@@ -104,4 +107,3 @@ $app->get( '/welcome/', $authenticate( $app ), function () use ( $app, $model ) 
 );
 
 $app->run();
-
