@@ -22,8 +22,7 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
 
 <a href="/login/facebook">Facebook</a> |
 <a href="/login/twitter">Twitter</a> |
-<a href="/login/google">Google</a> |
-<a href="/login/github">Github</a>
+<a href="/login/google">Google</a>
 
 </body>
 </html>

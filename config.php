@@ -11,7 +11,7 @@
 
 return
     [
-        "base_url"   => "http://slim.local/hybrid.php",
+        "base_url"   => "http://mdata.opendatacollector.com/hybrid.php",
         "providers"  => [
             "Google"   => [
                 "enabled" => true,

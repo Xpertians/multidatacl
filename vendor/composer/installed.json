@@ -1,24 +1,24 @@
 [
     {
         "name": "hybridauth/hybridauth",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "version": "v2.3.0",
+        "version_normalized": "2.3.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/hybridauth/hybridauth.git",
-            "reference": "19ad0a2a3f21e61988f5bf9097366966a5fe4c09"
+            "reference": "1b161fb779ce352592fc0499b9a89713623a8ae5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/19ad0a2a3f21e61988f5bf9097366966a5fe4c09",
-            "reference": "19ad0a2a3f21e61988f5bf9097366966a5fe4c09",
+            "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/1b161fb779ce352592fc0499b9a89713623a8ae5",
+            "reference": "1b161fb779ce352592fc0499b9a89713623a8ae5",
             "shasum": ""
         },
         "require": {
             "ext-curl": "*",
             "php": ">=5.2.0"
         },
-        "time": "2015-02-13 15:29:02",
+        "time": "2014-11-16T17:11:52+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -52,26 +52,27 @@
     },
     {
         "name": "slim/slim",
-        "version": "2.5.0",
-        "version_normalized": "2.5.0.0",
+        "version": "2.6.3",
+        "version_normalized": "2.6.3.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/codeguy/Slim.git",
-            "reference": "04958a10ed95bc7bc97568e573877d4f9b62db48"
+            "url": "https://github.com/slimphp/Slim.git",
+            "reference": "9224ed81ac1c412881e8d762755e3d76ebf580c0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/codeguy/Slim/zipball/04958a10ed95bc7bc97568e573877d4f9b62db48",
-            "reference": "04958a10ed95bc7bc97568e573877d4f9b62db48",
+            "url": "https://api.github.com/repos/slimphp/Slim/zipball/9224ed81ac1c412881e8d762755e3d76ebf580c0",
+            "reference": "9224ed81ac1c412881e8d762755e3d76ebf580c0",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.0"
         },
         "suggest": {
-            "ext-mcrypt": "Required for HTTP cookie encryption"
+            "ext-mcrypt": "Required for HTTP cookie encryption",
+            "phpseclib/mcrypt_compat": "Polyfil for mcrypt extension"
         },
-        "time": "2014-12-09 19:59:29",
+        "time": "2017-01-07T12:21:41+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

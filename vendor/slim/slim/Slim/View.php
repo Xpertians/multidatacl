@@ -3,10 +3,10 @@
  * Slim - a micro PHP 5 framework
  *
  * @author      Josh Lockhart <info@slimframework.com>
- * @copyright   2011 Josh Lockhart
+ * @copyright   2011-2017 Josh Lockhart
  * @link        http://www.slimframework.com
  * @license     http://www.slimframework.com/license
- * @version     2.4.2
+ * @version     2.6.3
  * @package     Slim
  *
  * MIT LICENSE
@@ -152,9 +152,9 @@ class View
     {
         if (!is_null($key)) {
             return isset($this->data[$key]) ? $this->data[$key] : null;
-        } else {
-            return $this->data->all();
         }
+
+        return $this->data->all();
     }
 
     /**
