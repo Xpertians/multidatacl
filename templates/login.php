@@ -10,6 +10,28 @@
 		<link href="/assets/css/jumbotron.css" rel="stylesheet">
 	</head>
 	<body>
+
+		<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+		            <div class="navbar-header">
+										                <a class="navbar-brand" href="/warpit/html/main/"><img width="auto" style="max-height:30px;vertical-align:middle;" src="/warpit/Views/main/icon_multidata.jpg"> <b>MultiDATA</b></a>
+		            </div>
+								<ul class="nav navbar-top-links navbar-right hidden-xs" id="account-settings">
+
+
+			<li><a href="/warpit/html/login/"><i class="fa fa-user fa-fw"></i> Ingresa</a></li>
+
+
+		</ul>
+		            <div class="navbar-default sidebar" role="navigation">
+			<div class="sidebar-nav navbar-collapse">
+				<ul class="nav" id="side-menu">
+										</ul>
+			</div>
+		</div>
+		        </nav>
+
+<!--
+
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 			<a class="navbar-brand" href="#">Navbar</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,6 +64,7 @@
 				</ul>
 			</div>
 		</nav>
+-->
 
 		<main role="main">
 
