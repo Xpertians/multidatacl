@@ -25,8 +25,10 @@
      </div>
 
      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-       <h1 class="display-4">Pricing</h1>
-       <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+       <h1 class="display-4">MultiDATA Chile</h1>
+       <p class="lead">
+				 Somos es la base de datos referencial, comunitaria y abierta más grande del país. Ofrecemos un servicio de consulta de datos publicos y abiertos al alcance de cualquier persona que requiera obtener datos de referencia sobre vehículos, personas y sociedades.
+			 </p>
      </div>
 
      <div class="container">
@@ -87,13 +89,13 @@
 				 <hr>
 	       <div class="row py-4 d-flex align-items-center">
 	         <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-	           <b>MultiDATA.CL</b> &copy; by <a href="http://xpertians.com">Xpertians</a><br>
-						 <a href="https://odc.xpertians.com/docs/terminos-de-servicio/">Condiciones</a> &bull;
-						 <a href="https://OpenDataCollector.com">API (OpenDataCollector)</a>
+	           <a href="https://odc.xpertians.com/docs/terminos-de-servicio/">Condiciones</a> &bull;
+						 <a href="https://OpenDataCollector.com">API (OpenDataCollector)</a><br>
+						 <b>MultiDATA.CL</b> &copy; by <a href="http://xpertians.com">Xpertians</a>
 	         </div>
 	         <div class="col-md-6 col-lg-7 text-center text-md-right">
-	 					Software Libre bajo licencia <a target="_blank" href="https://github.com/Xpertians/multidatacl/blob/master/LICENSE">GPL-3.0</a> <br>
-						<a target="_blank" href="https://github.com/Xpertians/multidatacl">Fork en GitHub</a>
+	 					Puedes descargar el c&oacute;digo en <a target="_blank" href="https://github.com/Xpertians/multidatacl">GitHub</a><br>
+						Software Libre bajo licencia <a target="_blank" href="https://github.com/Xpertians/multidatacl/blob/master/LICENSE">GPL-3.0</a>
 	         </div>
 	       </div>
 	 		</footer>
