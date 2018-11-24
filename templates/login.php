@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<title>Pricing example for Bootstrap</title>
+		<title>MultiDATA.CL</title>
 		<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 		<link href="/assets/css/multidata.css" rel="stylesheet">
 		<link href="/assets/css/pricing.css" rel="stylesheet">
@@ -13,7 +13,10 @@
 	<body>
 
 		<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-			<h5 class="my-0 mr-md-auto font-weight-normal">MultiDATA</h5>
+			<h4 class="my-0 mr-md-auto font-weight-normal" style="color:#1B3C81;">
+				<a href="/"><img src="/assets/imgs/multidata.png" width='80px'></a>
+				<b>MultiDATA</b>
+			</h4>
        <nav class="my-2 my-md-0 mr-md-3">
          <a class="p-2 text-dark" href="/">Principal</a>
          <a class="p-2 text-dark" href="#">Proyecto</a>
