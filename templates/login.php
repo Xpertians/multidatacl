@@ -16,6 +16,11 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<form class="form-inline my-2 my-lg-0">
+					<a class="btn btn-primary" href="/login/facebook">Login with Facebook</a>
+					<a class="btn btn-primary" href="/login/twitter">Login with Twitter</a>
+					<a class="btn btn-primary" href="/login/google">Login with Google</a>
+				</form>
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -35,11 +40,6 @@
 						</div>
 					</li>
 				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<a class="btn btn-primary" href="/login/facebook">Login with Facebook</a>
-					<a class="btn btn-primary" href="/login/twitter">Login with Twitter</a>
-					<a class="btn btn-primary" href="/login/google">Login with Google</a>
-				</form>
 			</div>
 		</nav>
 
