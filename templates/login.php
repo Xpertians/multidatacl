@@ -8,6 +8,7 @@
 		<title>Pricing example for Bootstrap</title>
 		<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 		<link href="/assets/css/jumbotron.css" rel="stylesheet">
+		<link href="/assets/css/multidata.css" rel="stylesheet">
 	</head>
 	<body>
 

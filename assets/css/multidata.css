@@ -1,0 +1,111 @@
+.social {
+  position:relative;
+  float:right;
+}
+
+.social span {
+	display: inline-block;
+}
+
+#label {
+	vertical-align: top;
+}
+
+.social .twitter {
+  font-size: 1px;
+}
+
+.social .facebook {
+  font-size: 1px;
+}
+
+.social .facebook iframe {
+	vertical-align: middle;
+}
+
+#tecnica {
+	height: 8.5ex;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 10px 15px;
+    font-size: 18px;
+    line-height: 0px;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default {
+    background-color: #1B3C81;
+    border-color: #428bca;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: #1B3C81;
+    border-color: #428bca;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #428bca;
+}
+
+.sidebar ul li a.active {
+    background-color: #428bca;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #428bca;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.sidebar .sidebar-search {
+    padding: 15px;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar ul li a.active {
+    background-color: #428bca;
+}
+
+#footer {
+    height:30px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
