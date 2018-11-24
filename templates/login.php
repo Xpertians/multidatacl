@@ -9,6 +9,7 @@
 		<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 		<link href="/assets/css/multidata.css" rel="stylesheet">
 		<link href="/assets/css/pricing.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 
@@ -21,8 +22,36 @@
          <a class="p-2 text-dark" href="#">Proyecto</a>
          <a class="p-2 text-dark" target="_blank" href="https://OpenDataCollector.com">API (OpenDataCollector)</a>
        </nav>
-       <a class="btn btn-outline-primary active" href="#">Ingresar</a>
+			 <button type="button" class="btn btn-outline-primary active" data-toggle="modal" data-target="#sem-login">
+		     Ingresar
+		   </button>
      </div>
+
+
+		   <!-- The Modal -->
+		   <div class="modal fade seminor-login-modal" data-backdrop="static" id="sem-login">
+		     <div class="modal-dialog modal-dialog-centered">
+		       <div class="modal-content">
+
+							<!-- Modal body -->
+							<div class="modal-body seminor-login-modal-body">
+							<h5 class="modal-title text-center">Ingresar a su cuenta</h5>
+								<button type="button" class="close" data-dismiss="modal">
+									<span><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+								</button>
+								<div class="forgot-pass-fau pt-3">
+									Para utilizar nuestra plataforma no necesita registrarse. Puede ingresar usando cualquiera de las opciones de redes sociales que se listan a continuaci&oacute;n.
+								</div>
+
+							<div class="btn-check-log">
+								<a type="button" class="btn-check-login" href="/login/google"><img src="/assets/imgs/google.png" height=20px>Google</a>
+							</div>
+
+						</div>
+				</div>
+			</div>
+		 </div>
+
 
      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
        <h1 class="display-4">MultiDATA Chile</h1>
@@ -30,6 +59,18 @@
 				 Somos es la base de datos referencial, comunitaria y abierta más grande del país. Ofrecemos un servicio de consulta de datos publicos y abiertos al alcance de cualquier persona que requiera obtener datos de referencia sobre vehículos, personas y sociedades.
 			 </p>
      </div>
+
+		 <?php
+		 $identifier_session = !empty( Hybrid_Auth::storage() ) ? Hybrid_Auth::storage()->get( 'user' ) : null;
+		 if (isset( $identifier_session ) && ! empty( $identifier_session )) {
+		   echo '<a href="/welcome">Return to Control Panel</a>';
+		 }
+
+		 if(isset($_GET['err']) && !empty($_GET['err'])) {
+		     echo '<div>Authentication failed. Please try again</div>';
+		 }
+		 ?>
+
 
      <div class="container">
        <div class="card-deck mb-3 text-center">
