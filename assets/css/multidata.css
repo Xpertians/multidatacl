@@ -102,6 +102,11 @@
     background-color: #428bca;
 }
 
+#btn_google {
+    color:#007bff;
+    background-color: #ffffff;
+}
+
 #footer {
     height:30px;
     width: 100%;

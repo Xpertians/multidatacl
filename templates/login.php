@@ -14,77 +14,37 @@
 
 <nav class="navbar navbar-default navbar-expand-md navbar-static-top" style="margin-bottom: 0">
 	<div class="mx-auto order-0">
-		<a class="navbar-brand mx-auto" href="#">Navbar 2</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+		<a class="navbar-brand" href="/warpit/html/main/">
+      <img width="auto" style="max-height:30px;vertical-align:middle;" src="/assets/imgs/icon_multidata.jpg">
+      <b>MultiDATA</b>
+    </a>
 	</div>
 	<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-		<ul class="navbar-nav mr-auto">
+		<ul class="nav navbar-top-links mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="#">Left</a>
+				<a class="nav-link" href="#">Principal</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="//codeply.com">Codeply</a>
+				<a class="nav-link" href="#">Nosotros</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Link</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Link</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link" href="#">Desarrolladores</a>
 			</li>
 		</ul>
 	</div>
 	<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-		<ul class="navbar-nav ml-auto">
+		<ul class="nav navbar-top-links ml-auto" style="padding-left:1em;">
 			<li class="nav-item">
-				<a class="nav-link" href="#">Right</a>
+				<a class="nav-link" href="#">Login with</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Link</a>
+				<a class="btn btn-primary" id="btn_google" href="/login/google">
+					<img src="/assets/imgs/google.png" width="20"> <b>Google</b>
+				</a>
 			</li>
 		</ul>
 	</div>
 </nav>
-
-<!--
-
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-			<a class="navbar-brand" href="#">Navbar</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-				<form class="form-inline my-2 my-lg-0">
-					<a class="btn btn-primary" href="/login/facebook">Login with Facebook</a>
-					<a class="btn btn-primary" href="/login/twitter">Login with Twitter</a>
-					<a class="btn btn-primary" href="/login/google">Login with Google</a>
-				</form>
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#">Disabled</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-						<div class="dropdown-menu" aria-labelledby="dropdown01">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</nav>
--->
 
 		<main role="main">
 
