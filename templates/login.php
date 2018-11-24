@@ -36,8 +36,9 @@
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-					<a class="btn btn-primary" href="/login/google">Sign up</a>
+					<a class="btn btn-primary" href="/login/facebook">Login with Facebook</a>
+					<a class="btn btn-primary" href="/login/twitter">Login with Twitter</a>
+					<a class="btn btn-primary" href="/login/google">Login with Google</a>
 				</form>
 			</div>
 		</nav>
@@ -90,6 +91,6 @@
 			text: 'Thumbnail'
 			});
 		</script>
-		
+
 	</body>
 </html>
