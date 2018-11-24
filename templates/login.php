@@ -14,7 +14,7 @@
 
 <nav class="navbar navbar-default navbar-expand-md navbar-static-top" style="margin-bottom: 0">
 	<div class="mx-auto order-0">
-		<a class="navbar-brand" href="/warpit/html/main/">
+		<a class="navbar-brand" href="/">
       <img width="auto" style="max-height:30px;vertical-align:middle;" src="/assets/imgs/icon_multidata.jpg">
       <b>MultiDATA</b>
     </a>
@@ -28,18 +28,23 @@
 				<a class="nav-link" href="#">Nosotros</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Desarrolladores</a>
+				<a class="nav-link" href="https://OpenDataCollector.com">API (OpenDataCollector)</a>
 			</li>
 		</ul>
 	</div>
 	<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-		<ul class="nav navbar-top-links ml-auto" style="padding-left:1em;">
-			<li class="nav-item">
-				<a class="nav-link" href="#">Login with</a>
+		<ul class="nav navbar-top-links ml-auto">
+			<li class="nav-item" style="vertical-align: middle;">
+				<font color="#ffffff">Ingresar:</font>
 			</li>
 			<li class="nav-item">
-				<a class="btn btn-primary" id="btn_google" href="/login/google">
-					<img src="/assets/imgs/google.png" width="20"> <b>Google</b>
+				<a class="btn btn-light btn-space" id="btn_google" href="/login/google">
+					<img src="/assets/imgs/google.png" width="20"> Google
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="btn btn-light btn-space" id="btn_facebook" href="/login/facebook">
+					<img src="/assets/imgs/facebook.png" width="22"> Facebook
 				</a>
 			</li>
 		</ul>
@@ -59,19 +64,42 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-						<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+
+						<div class="card" style="width: 18rem;">
+							<div class="card-header bg-warning text-white">
+								<h2>Veh&iacute;culos</h2>
+							</div>
+							<div class="card-footer">
+					      <a href="#" class="btn btn-warning text-white btn-sm float-right">Realizar busqueda</a>
+					    </div>
+						</div>
+
+
 					</div>
 					<div class="col-md-4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-						<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+
+						<div class="card" style="width: 18rem;">
+							<div class="card-header bg-success text-white">
+								<h2>Personas</h2>
+							</div>
+							<div class="card-footer">
+								<a href="#" class="btn btn-success text-white btn-sm float-right">Realizar busqueda</a>
+					    </div>
+						</div>
+
 					</div>
 					<div class="col-md-4">
-						<h2>Heading</h2>
-						<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-						<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+
+						<div class="card" style="width: 18rem;">
+							<div class="card-header bg-primary text-white">
+								<h2>Empresas</h2>
+							</div>
+							<div class="card-footer">
+								<a href="#" class="btn btn-primary text-white btn-sm float-right">Realizar busqueda</a>
+					    </div>
+						</div>
+
+
 					</div>
 				</div>
 				<hr>
@@ -90,7 +118,14 @@
 		</main>
 
 		<footer class="container">
-			<p>&copy; Company 2017-2018</p>
+      <div class="row py-4 d-flex align-items-center">
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <b>MultiDATA.CL</b> &copy; by <a href="http://xpertians.com">Xpertians</a>
+        </div>
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+					Software Libre bajo licencia GPL-3.0 - <a href="#">Descargar</a>
+        </div>
+      </div>
 		</footer>
 
 		<script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
