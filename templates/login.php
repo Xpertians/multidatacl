@@ -12,24 +12,22 @@
 	</head>
 	<body>
 
-		<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-		            <div class="navbar-header">
-										                <a class="navbar-brand" href="/warpit/html/main/"><img width="auto" style="max-height:30px;vertical-align:middle;" src="/warpit/Views/main/icon_multidata.jpg"> <b>MultiDATA</b></a>
-		            </div>
-								<ul class="nav navbar-top-links navbar-right hidden-xs" id="account-settings">
-
-
+	<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/warpit/html/main/">
+				<img width="auto" style="max-height:30px;vertical-align:middle;" src="/assets/imgs/icon_multidata.jpg">
+				<b>MultiDATA</b>
+			</a>
+		</div>
+		<ul class="nav navbar-top-links navbar-right hidden-xs" id="account-settings">
 			<li><a href="/warpit/html/login/"><i class="fa fa-user fa-fw"></i> Ingresa</a></li>
-
-
 		</ul>
-		            <div class="navbar-default sidebar" role="navigation">
+		<div class="navbar-default sidebar" role="navigation">
 			<div class="sidebar-nav navbar-collapse">
-				<ul class="nav" id="side-menu">
-										</ul>
+				<ul class="nav" id="side-menu"></ul>
 			</div>
 		</div>
-		        </nav>
+	</nav>
 
 <!--
 
