@@ -12,7 +12,7 @@
 	</head>
 	<body>
 
-<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+<nav class="navbar navbar-default navbar-expand-md navbar-static-top" style="margin-bottom: 0">
 	<div class="mx-auto order-0">
 		<a class="navbar-brand mx-auto" href="#">Navbar 2</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
