@@ -23,7 +23,7 @@
         <a class="p-2 text-dark" href="#">Support</a>
         <a class="p-2 text-dark" href="#">Pricing</a>
       </nav>
-      <a class="btn btn-outline-primary" href="#">Sign up</a>
+      <a class="btn btn-outline-primary" href="/login/google">Sign up</a>
     </div>
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
@@ -32,6 +32,18 @@
     </div>
 
     <div class="container">
+
+			<?php
+			$identifier_session = !empty( Hybrid_Auth::storage() ) ? Hybrid_Auth::storage()->get( 'user' ) : null;
+			if (isset( $identifier_session ) && ! empty( $identifier_session )) {
+				echo '<a href="/welcome">Return to Control Panel</a>';
+			}
+
+			if(isset($_GET['err']) && !empty($_GET['err'])) {
+			    echo '<div>Authentication failed. Please try again</div>';
+			}
+			?>
+
       <div class="card-deck mb-3 text-center">
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
@@ -131,33 +143,4 @@
       });
     </script>
   </body>
-</html>
-
-<html>
-<head>
-	<title>Login - HybridAuth App</title>
-</head>
-<body>
-
-<?php
-$identifier_session = !empty( Hybrid_Auth::storage() ) ? Hybrid_Auth::storage()->get( 'user' ) : null;
-if (isset( $identifier_session ) && ! empty( $identifier_session )) {
-	echo '<a href="/welcome">Return to Control Panel</a>';
-}
-
-if(isset($_GET['err']) && !empty($_GET['err'])) {
-    echo '<div>Authentication failed. Please try again</div>';
-}
-?>
-
-
-<h1>HybridAuth Demo App</h1>
-
-<p>Click any of the link below to login with a social network of your choice</p>
-
-<a href="/login/facebook">Facebook</a> |
-<a href="/login/twitter">Twitter</a> |
-<a href="/login/google">Google</a>
-
-</body>
 </html>
