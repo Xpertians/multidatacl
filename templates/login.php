@@ -92,7 +92,7 @@
 					 </div>
          </div>
          <div class="card mb-4 shadow-sm">
-           <div class="card-header">
+           <div class="card-header text-white bg-primary">
              <h4 class="my-0 font-weight-normal">Personas</h4>
            </div>
            <div class="card-body">
@@ -108,7 +108,7 @@
 					 </div>
          </div>
          <div class="card mb-4 shadow-sm">
-           <div class="card-header">
+           <div class="card-header text-white bg-primary">
              <h4 class="my-0 font-weight-normal">Sociedades</h4>
            </div>
            <div class="card-body">
