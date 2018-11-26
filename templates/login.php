@@ -88,11 +88,11 @@
              </ul>
            </div>
 					 <div class="card-footer bg-transparent border-warning">
-						 <button type="button" class="btn btn-md btn-block btn-success">Realizar busqueda</button>
+						 <button type="button" class="btn btn-md btn-block btn-warning">Realizar busqueda</button>
 					 </div>
          </div>
          <div class="card mb-4 shadow-sm">
-           <div class="card-header text-white bg-primary">
+           <div class="card-header text-white bg-success">
              <h4 class="my-0 font-weight-normal">Personas</h4>
            </div>
            <div class="card-body">
@@ -103,7 +103,7 @@
                <li>Gobierno transparente</li>
              </ul>
            </div>
-					 <div class="card-footer bg-transparent border-primary">
+					 <div class="card-footer bg-transparent border-success">
 						 <button type="button" class="btn btn-md btn-block btn-outline-success">Pronto</button>
 					 </div>
          </div>
@@ -121,7 +121,7 @@
              </ul>
            </div>
 					 <div class="card-footer bg-transparent border-primary">
-						 <button type="button" class="btn btn-md btn-block btn-outline-success">Pronto</button>
+						 <button type="button" class="btn btn-md btn-block btn-outline-primary">Pronto</button>
 					 </div>
          </div>
        </div>
