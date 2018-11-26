@@ -75,7 +75,7 @@
      <div class="container">
        <div class="card-deck mb-3 text-center">
          <div class="card mb-4 shadow-sm">
-           <div class="card-header text-white bg-primary">
+           <div class="card-header text-white bg-warning">
              <h4 class="my-0 font-weight-normal">Veh&iacute;culos</h4>
            </div>
            <div class="card-body">
@@ -87,7 +87,7 @@
 							 <li>Propietarios</li>
              </ul>
            </div>
-					 <div class="card-footer bg-transparent border-primary">
+					 <div class="card-footer bg-transparent border-warning">
 						 <button type="button" class="btn btn-md btn-block btn-success">Realizar busqueda</button>
 					 </div>
          </div>
