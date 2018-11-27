@@ -35,17 +35,14 @@
 
 							<!-- Modal body -->
 							<div class="modal-body seminor-login-modal-body">
-							<h5 class="modal-title text-center">Ingresar a su cuenta</h5>
+							<h5 class="modal-title text-center">Ingresar usndo una cuenta en</h5>
 								<button type="button" class="close" data-dismiss="modal">
 									<span><i class="fa fa-times-circle" aria-hidden="true"></i></span>
 								</button>
-								<div class="forgot-pass-fau pt-3">
-									No necesita registrarse para utilizar nuestra plataforma. Solo debe ingresar con un perfil valido en una de las redes sociales que se listan a continuaci&oacute;n.
+	
+								<div class="btn-check-log">
+									<a type="button" class="btn-check-login" href="/login/google"><img src="/assets/imgs/google.png" height=20px>Google</a>
 								</div>
-
-							<div class="btn-check-log">
-								<a type="button" class="btn-check-login" href="/login/google"><img src="/assets/imgs/google.png" height=20px>Google</a>
-							</div>
 
 						</div>
 				</div>
