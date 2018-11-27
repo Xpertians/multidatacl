@@ -321,6 +321,10 @@ button.btn-check-login:hover {
     -moz-border-radius: 0px;
 }
 
+.seminor-login-modal .modal-dialog .modal-content {
+    border-radius: 5px;
+}
+
 body {
     background: #E9EBEE !important;
 }
