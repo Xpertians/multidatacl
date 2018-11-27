@@ -41,7 +41,7 @@
 									<button type="button" class="btn btn-block btn-lg btn-primary text-left">
 								 		<img src="/assets/imgs/google.png" height=20px> ingresar usando <b>Google</b>
 								 	</button>
-									<button type="button" class="btn btn-block btn-primary btn-lg text-left">
+									<button type="button" class="btn btn-block btn-outline-primary btn-lg text-left">
 								 		<img src="/assets/imgs/facebook.png" height=20px> ingresar usando <b>Facebook</b>
 								 	</button>
 								</div>
