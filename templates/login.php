@@ -38,7 +38,7 @@
 									x
 								</button>
 								<div class="card-footer bg-transparent border-primary">
-									<button type="button" class="btn btn-block btn-primary text-left">
+									<button type="button" class="btn btn-block btn-lg btn-primary text-left">
 								 		<img src="/assets/imgs/google.png" height=20px> ingresar usando <b>Google</b>
 								 	</button>
 									<button type="button" class="btn btn-block btn-outline-primary text-left">
