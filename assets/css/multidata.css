@@ -314,7 +314,7 @@ button.btn-check-login:hover {
 }
 
 .modal-dialog {
-    border: 0px !important;
+    border: 5px !important;
     max-width: 350px;
     border-radius: 0px;
     -webkit-border-radius: 0px;
