@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-
+<i class="fas fa-stroopwafel"></i>
 		<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
 			<h4 class="my-0 mr-md-auto font-weight-normal">
 				<a href="/"><img src="/assets/imgs/multidata.png" height='60px'></a>
