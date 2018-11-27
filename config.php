@@ -18,12 +18,12 @@ return
                 "keys"    => [ "id" => "541281255542-sh28tca2qjek66ln5elkgaaijv8odg4p.apps.googleusercontent.com", "secret" => "SlnflF5xjMdNUVfaKtd3oSr_" ],
             ],
             "Facebook" => [
-                "enabled"        => true,
+                "enabled"        => false,
                 "keys"           => [ "id" => "", "secret" => "" ],
                 "trustForwarded" => false
             ],
             "Twitter"  => [
-                "enabled" => true,
+                "enabled" => false,
                 "keys"    => [ "key" => "", "secret" => "" ]
             ],
         ],
