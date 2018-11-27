@@ -15,7 +15,7 @@ return
         "providers"  => [
             "Google"   => [
                 "enabled" => true,
-                "keys"    => [ "id" => "", "secret" => "" ],
+                "keys"    => [ "id" => "541281255542-sh28tca2qjek66ln5elkgaaijv8odg4p.apps.googleusercontent.com", "secret" => "SlnflF5xjMdNUVfaKtd3oSr_" ],
             ],
             "Facebook" => [
                 "enabled"        => true,
