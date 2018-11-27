@@ -320,3 +320,7 @@ button.btn-check-login:hover {
 body {
     background: #E9EBEE !important;
 }
+
+.modal-dialog {
+    max-width: 350px;
+}
