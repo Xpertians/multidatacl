@@ -40,7 +40,7 @@
 									<span><i class="fa fa-times-circle" aria-hidden="true"></i></span>
 								</button>
 								<div class="forgot-pass-fau pt-3">
-									Para utilizar nuestra plataforma no necesita registrarse. Puede ingresar usando cualquiera de las opciones de redes sociales que se listan a continuaci&oacute;n.
+									No necesita registrarse para utilizar nuestra plataforma. Solo debe ingresar con un perfil valido en una de las redes sociales que se listan a continuaci&oacute;n.
 								</div>
 
 							<div class="btn-check-log">
