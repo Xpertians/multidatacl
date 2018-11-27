@@ -40,12 +40,14 @@
 								<div class="card-footer bg-transparent border-primary">
 									<h5 class="modal-title text-center">Seleccione una red social</h5>
 									<hr>
-									<button type="button" class="btn btn-block btn-lg btn-primary text-left">
+									<button type="button" class="btn btn-block btn-lg btn-primary text-left" onClick="windows.location.href='/login/google'">
 								 		<img src="/assets/imgs/google.png" height=20px> ingresar usando <b>Google</b>
 								 	</button>
+								 	<!--
 									<button type="button" class="btn btn-block btn-outline-primary btn-lg text-left">
 								 		<img src="/assets/imgs/facebook.png" height=20px> ingresar usando <b>Facebook</b>
 								 	</button>
+								 	-->
 								</div>
 						</div>
 				</div>
@@ -61,7 +63,6 @@
      </div>
 
 		 <?php
-		 /*
 		 $identifier_session = !empty( Hybrid_Auth::storage() ) ? Hybrid_Auth::storage()->get( 'user' ) : null;
 		 if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 		   echo '<a href="/welcome">Return to Control Panel</a>';
@@ -70,7 +71,6 @@
 		 if(isset($_GET['err']) && !empty($_GET['err'])) {
 		     echo '<div>Authentication failed. Please try again</div>';
 		 }
-		 */
 		 ?>
 
 
