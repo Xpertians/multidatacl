@@ -316,3 +316,7 @@ button.btn-check-login:hover {
 .modal-dialog {
     border: 0px !important;
 }
+
+body {
+    background: #E9EBEE !important;
+}
