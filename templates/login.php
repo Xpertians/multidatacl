@@ -35,7 +35,7 @@
 
 							<!-- Modal body -->
 							<div class="modal-body seminor-login-modal-body">
-							<h5 class="modal-title text-center">Ingresar usndo una cuenta en</h5>
+							<h5 class="modal-title text-center">Ingresar usando</h5>
 								<button type="button" class="close" data-dismiss="modal">
 									<span><i class="fa fa-times-circle" aria-hidden="true"></i></span>
 								</button>
