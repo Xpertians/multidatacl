@@ -36,7 +36,7 @@
 							<div class="modal-body seminor-login-modal-body">
 							<h5 class="modal-title text-center">Ingresar usando</h5>
 								<button type="button" class="close" data-dismiss="modal">
-									<span><i class="fa fa-times-circle"></i></span>
+									x
 								</button>
 	
 								<div class="btn-check-log">
