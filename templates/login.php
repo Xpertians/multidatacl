@@ -34,11 +34,11 @@
 							<!-- Modal body -->
 							<div class="modal-body seminor-login-modal-body">
 								<h4 class="modal-title text-center">Bienvenid@</h4>
-	<h5 class="modal-title text-center">Seleccione una red social</h5>					
-<button type="button" class="close" data-dismiss="modal">
+								<button type="button" class="close" data-dismiss="modal">
 									x
 								</button>
 								<div class="card-footer bg-transparent border-primary">
+									<h5 class="modal-title text-center">Seleccione una red social</h5>
 									<button type="button" class="btn btn-block btn-lg btn-primary text-left">
 								 		<img src="/assets/imgs/google.png" height=20px> ingresar usando <b>Google</b>
 								 	</button>
