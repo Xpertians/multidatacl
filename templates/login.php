@@ -9,7 +9,6 @@
 		<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 		<link href="/assets/css/multidata.css" rel="stylesheet">
 		<link href="/assets/css/pricing.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 <i class="fas fa-stroopwafel"></i>
