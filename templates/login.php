@@ -33,8 +33,9 @@
 
 							<!-- Modal body -->
 							<div class="modal-body seminor-login-modal-body">
-								<h4 class="modal-title text-center">Bienvenido</h4>
-								<button type="button" class="close" data-dismiss="modal">
+								<h4 class="modal-title text-center">Bienvenid@</h4>
+	<h5 class="modal-title text-center">Seleccione una red social</h5>					
+<button type="button" class="close" data-dismiss="modal">
 									x
 								</button>
 								<div class="card-footer bg-transparent border-primary">
