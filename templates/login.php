@@ -11,7 +11,6 @@
 		<link href="/assets/css/pricing.css" rel="stylesheet">
 	</head>
 	<body>
-<i class="fas fa-stroopwafel"></i>
 		<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
 			<h4 class="my-0 mr-md-auto font-weight-normal">
 				<a href="/"><img src="/assets/imgs/multidata.png" height='60px'></a>
@@ -34,15 +33,18 @@
 
 							<!-- Modal body -->
 							<div class="modal-body seminor-login-modal-body">
-							<h5 class="modal-title text-center">Ingresar usando</h5>
+								<h4 class="modal-title text-center">Bienvenido</h4>
 								<button type="button" class="close" data-dismiss="modal">
 									x
 								</button>
-	
-								<div class="btn-check-log">
-									<a type="button" class="btn-check-login" href="/login/google"><img src="/assets/imgs/google.png" height=20px>Google</a>
+								<div class="card-footer bg-transparent border-primary">
+									<button type="button" class="btn btn-md btn-block btn-outline-primary text-left">
+								 		<img src="/assets/imgs/google.png" height=20px> ingresar usando <b>Google</b>
+								 	</button>
+									<button type="button" class="btn btn-md btn-block btn-outline-primary text-left">
+								 		<img src="/assets/imgs/facebook.png" height=20px> ingresar usando <b>Facebook</b>
+								 	</button>
 								</div>
-
 						</div>
 				</div>
 			</div>
@@ -57,6 +59,7 @@
      </div>
 
 		 <?php
+		 /*
 		 $identifier_session = !empty( Hybrid_Auth::storage() ) ? Hybrid_Auth::storage()->get( 'user' ) : null;
 		 if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 		   echo '<a href="/welcome">Return to Control Panel</a>';
@@ -65,6 +68,7 @@
 		 if(isset($_GET['err']) && !empty($_GET['err'])) {
 		     echo '<div>Authentication failed. Please try again</div>';
 		 }
+		 */
 		 ?>
 
 
