@@ -11,7 +11,7 @@
 
 return
     [
-        "base_url"   => "http://mdata.opendatacollector.com/hybrid.php",
+        "base_url"   => "http://mdata.opendatacollector.com",
         "providers"  => [
             "Google"   => [
                 "enabled" => true,
