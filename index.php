@@ -13,7 +13,7 @@ $app->config(
 // Set singleton value
 $app->container->singleton( 'db', function () {
         try {
-            $db = new PDO( 'mysql:host=localhost;dbname=mdata', 'mdata@mdata.opendatacollector.co', 'mdata2018',
+            $db = new PDO( 'mysql:host=localhost;dbname=mdata', 'mdata@mdata.opendatacollector.co', 'mdata2018..',
                 [ \PDO::ATTR_PERSISTENT => false ] );
         } catch ( PDOException $e ) {
             die( 'Error!: ' . $e->getMessage() );
