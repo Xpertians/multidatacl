@@ -11,6 +11,18 @@
 		<link href="/assets/css/pricing.css" rel="stylesheet">
 	</head>
 	<body>
+		
+		 <?php
+		 $identifier_session = !empty( Hybrid_Auth::storage() ) ? Hybrid_Auth::storage()->get( 'user' ) : null;
+		 if (isset( $identifier_session ) && ! empty( $identifier_session )) {
+		   echo '<a href="/welcome">Return to Control Panel</a>';
+		 }
+	
+		 if(isset($_GET['err']) && !empty($_GET['err'])) {
+		     echo '<div>Authentication failed. Please try again</div>';
+		 }
+		 ?>
+		
 		<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
 			<h4 class="my-0 mr-md-auto font-weight-normal">
 				<a href="/"><img src="/assets/imgs/multidata.png" height='60px'></a>
@@ -61,16 +73,6 @@
 				 Somos es la base de datos referencial, comunitaria y abierta más grande del país. Ofrecemos un servicio de consulta de datos publicos y abiertos al alcance de cualquier persona que requiera obtener datos de referencia sobre vehículos, personas y sociedades.
 			 </p>
      </div>
-	 <?php
-	 $identifier_session = !empty( Hybrid_Auth::storage() ) ? Hybrid_Auth::storage()->get( 'user' ) : null;
-	 if (isset( $identifier_session ) && ! empty( $identifier_session )) {
-	   echo '<a href="/welcome">Return to Control Panel</a>';
-	 }
-
-	 if(isset($_GET['err']) && !empty($_GET['err'])) {
-	     echo '<div>Authentication failed. Please try again</div>';
-	 }
-	 ?>
      <div class="container">
        <div class="card-deck mb-3 text-center">
          <div class="card mb-4 shadow-sm">
