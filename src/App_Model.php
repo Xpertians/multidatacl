@@ -53,8 +53,6 @@ class App_Model
      */
     public function register_user( $identifier, $email, $first_name, $last_name, $avatar_url )
     {
-        echo "register";
-        exit;
         try {
             $sql = "INSERT INTO users (identifier, email, first_name, last_name, avatar_url) VALUES (:identifier, :email, :first_name, :last_name, :avatar_url)";
 
