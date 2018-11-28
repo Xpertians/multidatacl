@@ -4,7 +4,7 @@
 		</h4>
 		<img src="<?=$model->getAvatarUrl( $identifier_session );?>" class="rounded-circle" height="40px;">
 		<nav class="my-2 my-md-0 mr-md-3">
-			<a class="p-2 text-dark" style="padding:0;" href="#">
+			<a class="text-dark" href="#">
 			    <b>Bienvenid@</b> <br>
 			    <?=$model->getFirstName( $identifier_session );?> <?=$model->getLastName( $identifier_session );?>
 		    </a>
