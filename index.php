@@ -40,7 +40,10 @@ $authenticate = function ( $app ) {
     };
 };
 
-$app->get( '/', $authenticate($app) );
+$app->get( '/', $authenticate($app), function () use ( $app ) {
+        $app->render( 'login.php' );
+    }
+);
 
 $app->get( '/login/', $authenticate( $app ), function () use ( $app ) {
         $app->render( 'login.php' );
