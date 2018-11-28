@@ -2,7 +2,7 @@
 		<h4 class="my-0 mr-md-auto font-weight-normal">
 			<a href="/"><img src="/assets/imgs/multidata.png" height='60px'></a>
 		</h4>
-		<img src="<?=$model->getAvatarUrl( $identifier );?>" height="20px">
+		<img src="" height="20px">
 		<nav class="my-2 my-md-0 mr-md-3 text-left">
 			<a class="p-2 text-dark" href="#"><b>Bienvenid@</b> <br><?=$model->getFirstName( $identifier );?> <?=$model->getLastName( $identifier );?></a>
 		</nav>
