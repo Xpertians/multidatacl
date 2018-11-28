@@ -34,7 +34,7 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
              </ul>
            </div>
 					 <div class="card-footer bg-transparent border-warning">
-						 <button type="button" class="btn btn-md btn-block btn-warning">Realizar busqueda</button>
+						 <button type="button" class="btn btn-md btn-block btn-warning" onClick="window.location.href='/home/cars';">Realizar busqueda</button>
 					 </div>
          </div>
          <div class="card mb-4 shadow-sm">
