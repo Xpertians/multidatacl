@@ -54,6 +54,8 @@ $app->get( '/login/:idp', function ( $idp ) use ( $app, $model ) {
             if (empty( $user_profile )) {
                 $app->redirect( '/login/?err=1' );
             }
+            echo "here";
+            exit;
             $identifier = $user_profile->identifier;
             if ($model->identifier_exists( $identifier )) {
                 $model->login_user( $identifier );
