@@ -45,6 +45,14 @@ $app->get( '/', $authenticate($app), function () use ( $app ) {
     }
 );
 
+$app->get( '/logout/', function () use ( $app, $model ) {
+        $app->hybridInstance;
+        $model->logout_user();
+        Hybrid_Auth::logoutAllProviders();
+        $app->redirect( '/login/' );
+    }
+);
+
 $app->get( '/login/', $authenticate( $app ), function () use ( $app ) {
         $app->render( 'login.php' );
     }
@@ -77,14 +85,6 @@ $app->get( '/login/:idp', function ( $idp ) use ( $app, $model ) {
         } catch ( Exception $e ) {
             echo $e->getMessage();
         }
-    }
-);
-
-$app->get( '/logout/', function () use ( $app, $model ) {
-        $app->hybridInstance;
-        $model->logout_user();
-        Hybrid_Auth::logoutAllProviders();
-        $app->redirect( '/login/' );
     }
 );
 
