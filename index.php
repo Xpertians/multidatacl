@@ -41,7 +41,7 @@ $authenticate = function ( $app ) {
 };
 
 $app->get( '/', $authenticate($app), function () use ( $app ) {
-        $app->redirect( '/welcome/' );
+        $app->redirect( '/home/' );
     }
 );
 
@@ -60,7 +60,7 @@ $app->get( '/login/:idp', function ( $idp ) use ( $app, $model ) {
             $identifier = $user_profile->identifier;
             if ($model->identifier_exists( $identifier )) {
                 $model->login_user( $identifier );
-                $app->redirect( '/welcome/' );
+                $app->redirect( '/home/' );
             } else {
                 $register = $model->register_user(
                     $identifier,
@@ -71,7 +71,7 @@ $app->get( '/login/:idp', function ( $idp ) use ( $app, $model ) {
                 );
                 if ($register) {
                     $model->login_user( $identifier );
-                    $app->redirect( '/welcome/' );
+                    $app->redirect( '/home/' );
                 }
             }
         } catch ( Exception $e ) {
@@ -88,8 +88,8 @@ $app->get( '/logout/', function () use ( $app, $model ) {
     }
 );
 
-$app->get( '/welcome/', $authenticate( $app ), function () use ( $app, $model ) {
-        $app->render( 'welcome.php', [ 'model' => $model ] );
+$app->get( '/home/', $authenticate( $app ), function () use ( $app, $model ) {
+        $app->render( 'home.php', [ 'model' => $model ] );
     }
 );
 

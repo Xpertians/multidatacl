@@ -15,10 +15,6 @@ $identifier_session = !empty( Hybrid_Auth::storage() ) ? Hybrid_Auth::storage()-
 	</head>
 	<body>
 		 <?php
-		 if (isset( $identifier_session ) && ! empty( $identifier_session )) {
-		   echo '<a href="/welcome">Return to Control Panel</a>';
-		 }
-	
 		 if(isset($_GET['err']) && !empty($_GET['err'])) {
 		     echo '<div>Authentication failed. Please try again</div>';
 		 }
@@ -28,11 +24,21 @@ $identifier_session = !empty( Hybrid_Auth::storage() ) ? Hybrid_Auth::storage()-
 			<h4 class="my-0 mr-md-auto font-weight-normal">
 				<a href="/"><img src="/assets/imgs/multidata.png" height='60px'></a>
 			</h4>
-       <nav class="my-2 my-md-0 mr-md-3">
-         <a class="p-2 text-dark" href="/">Principal</a>
-         <a class="p-2 text-dark" href="#">Proyecto</a>
-         <a class="p-2 text-dark" target="_blank" href="https://OpenDataCollector.com">API (OpenDataCollector)</a>
-       </nav>
+	       <nav class="my-2 my-md-0 mr-md-3">
+	       	<?php
+	       	if (isset( $identifier_session ) && ! empty( $identifier_session )) {
+	       	?>
+	         <a class="p-2 text-dark" href="/">Principal</a>
+	        <?php 
+	        }else{
+	        ?>
+	         <a class="p-2 text-dark" href="/home">Principal</a>
+	        <?php
+	        }
+	        ?>
+	         <a class="p-2 text-dark" href="#">Proyecto</a>
+	         <a class="p-2 text-dark" target="_blank" href="https://OpenDataCollector.com">API (OpenDataCollector)</a>
+	       </nav>
 			 <button type="button" class="btn btn-outline-primary active" data-toggle="modal" data-target="#sem-login">
 		     Ingresar
 		   </button>
