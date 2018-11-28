@@ -24,7 +24,7 @@
 			Ingresar
 		</button>
 		<?php }else{ ?>
-		<button type="button" class="btn btn-outline-danger active" onClick="window.location.href='/logout';">
+		<button type="button" class="btn btn-outline-danger" onClick="window.location.href='/logout';">
 			Salir
 		</button>
 		<?php } ?>
