@@ -54,8 +54,12 @@ $app->get( '/login/:idp', function ( $idp ) use ( $app, $model ) {
             if (empty( $user_profile )) {
                 $app->redirect( '/login/?err=1' );
             }
+            echo "preide";
             $identifier = $user_profile->identifier;
+            echo "ide";
             if ($model->identifier_exists( $identifier )) {
+            echo "sipis";
+            exit;
                 $model->login_user( $identifier );
                 $app->redirect( '/welcome/' );
             } else {
