@@ -20,12 +20,12 @@
 		<?php
 		if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 		?>
-		<button type="button" class="btn btn-outline-primary active" data-toggle="modal" data-target="#sem-login">
-			Ingresar
-		</button>
-		<?php }else{ ?>
 		<button type="button" class="btn btn-outline-danger" onClick="window.location.href='/logout';">
 			Salir
+		</button>
+		<?php }else{ ?>
+		<button type="button" class="btn btn-outline-primary active" data-toggle="modal" data-target="#sem-login">
+			Ingresar
 		</button>
 		<?php } ?>
 	</div>
