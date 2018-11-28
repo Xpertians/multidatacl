@@ -10,12 +10,12 @@
 			<?php 
 			}else{
 			?>
-				<a class="p-2 text-dark" href="/home">Principal</a>
+			<a class="p-2 text-dark" href="/home">Principal</a>
+			<a class="p-2 text-dark" href="#">Proyecto</a>
+			<a class="p-2 text-dark" target="_blank" href="https://OpenDataCollector.com">API (OpenDataCollector)</a>
 			<?php
 			}
 			?>
-			<a class="p-2 text-dark" href="#">Proyecto</a>
-			<a class="p-2 text-dark" target="_blank" href="https://OpenDataCollector.com">API (OpenDataCollector)</a>
 		</nav>
 		<?php
 		if (isset( $identifier_session ) && ! empty( $identifier_session )) {
