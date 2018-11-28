@@ -1,66 +1,12 @@
 <?php
 $identifier_session = !empty( Hybrid_Auth::storage() ) ? Hybrid_Auth::storage()->get( 'user' ) : null;
 include_once("header.php");
+include_once('navbar.php');
+include_once('modal.php');
+if(isset($_GET['err']) && !empty($_GET['err'])) {
+	echo '<div>Authentication failed. Please try again</div>';
+}
 ?>
-		 <?php
-		 if(isset($_GET['err']) && !empty($_GET['err'])) {
-		     echo '<div>Authentication failed. Please try again</div>';
-		 }
-		 ?>
-		
-		<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-			<h4 class="my-0 mr-md-auto font-weight-normal">
-				<a href="/"><img src="/assets/imgs/multidata.png" height='60px'></a>
-			</h4>
-	       <nav class="my-2 my-md-0 mr-md-3">
-	       	<?php
-	       	if (isset( $identifier_session ) && ! empty( $identifier_session )) {
-	       	?>
-	         <a class="p-2 text-dark" href="/">Principal</a>
-	        <?php 
-	        }else{
-	        ?>
-	         <a class="p-2 text-dark" href="/home">Principal</a>
-	        <?php
-	        }
-	        ?>
-	         <a class="p-2 text-dark" href="#">Proyecto</a>
-	         <a class="p-2 text-dark" target="_blank" href="https://OpenDataCollector.com">API (OpenDataCollector)</a>
-	       </nav>
-			 <button type="button" class="btn btn-outline-primary active" data-toggle="modal" data-target="#sem-login">
-		     Ingresar
-		   </button>
-     </div>
-
-
-		   <!-- The Modal -->
-		   <div class="modal fade seminor-login-modal" data-backdrop="static" id="sem-login">
-		     <div class="modal-dialog modal-dialog-centered">
-		       <div class="modal-content">
-
-							<!-- Modal body -->
-							<div class="modal-body seminor-login-modal-body">
-								<h4 class="modal-title text-center">Bienvenid@</h4>
-								<button type="button" class="close" data-dismiss="modal">
-									x
-								</button>
-								<div class="card-footer bg-transparent border-primary">
-									<h5 class="modal-title text-center">Seleccione una red social</h5>
-									<hr>
-									<button type="button" class="btn btn-block btn-lg btn-primary text-left" onClick="window.location.href='/login/google';">
-								 		<img src="/assets/imgs/google.png" height=20px> ingresar usando <b>Google</b>
-								 	</button>
-								 	<!--
-									<button type="button" class="btn btn-block btn-outline-primary btn-lg text-left">
-								 		<img src="/assets/imgs/facebook.png" height=20px> ingresar usando <b>Facebook</b>
-								 	</button>
-								 	-->
-								</div>
-						</div>
-				</div>
-			</div>
-		 </div>
-
 
      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
        <h1 class="display-4">MultiDATA Chile</h1>
