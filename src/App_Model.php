@@ -166,7 +166,9 @@ class App_Model
         $query->bindParam( ':identifier', $identifier );
         $query->execute();
         $result = $query->fetch( \PDO::FETCH_NUM );
-
+        if(trim($result[0])==""){
+            $result[0]  = "/assets/imgs/default_avatar.jpg";
+        }
         return $result[0];
     }
 
