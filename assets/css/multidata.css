@@ -328,3 +328,8 @@ button.btn-check-login:hover {
 body {
     background: #E9EBEE !important;
 }
+
+.image-container{
+    margin-left: 10px;
+    margin-right: -20px;
+}
