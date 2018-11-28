@@ -17,7 +17,15 @@
 			<a class="p-2 text-dark" href="#">Proyecto</a>
 			<a class="p-2 text-dark" target="_blank" href="https://OpenDataCollector.com">API (OpenDataCollector)</a>
 		</nav>
+		<?php
+		if (isset( $identifier_session ) && ! empty( $identifier_session )) {
+		?>
 		<button type="button" class="btn btn-outline-primary active" data-toggle="modal" data-target="#sem-login">
 			Ingresar
 		</button>
+		<?php }else{ ?>
+		<button type="button" class="btn btn-outline-primary active" onClick="window.location.href='/logout';">
+			Salir
+		</button>
+		<?php } ?>
 	</div>
