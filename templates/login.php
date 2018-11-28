@@ -1,3 +1,6 @@
+<?php
+$identifier_session = !empty( Hybrid_Auth::storage() ) ? Hybrid_Auth::storage()->get( 'user' ) : null;
+?>
 <!doctype html>
 <html lang="en">
 	<head>
@@ -11,9 +14,7 @@
 		<link href="/assets/css/pricing.css" rel="stylesheet">
 	</head>
 	<body>
-		
 		 <?php
-		 $identifier_session = !empty( Hybrid_Auth::storage() ) ? Hybrid_Auth::storage()->get( 'user' ) : null;
 		 if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 		   echo '<a href="/welcome">Return to Control Panel</a>';
 		 }
