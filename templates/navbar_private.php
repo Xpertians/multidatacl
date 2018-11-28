@@ -3,7 +3,7 @@
 			<a href="/"><img src="/assets/imgs/multidata.png" height='60px'></a>
 		</h4>
 		<nav class="my-2 my-md-0 mr-md-3">
-			<a class="p-2 text-dark" href="/">Bienvenid@: <?=$model->getFirstName( $identifier );?> <?=$model->getLastName( $identifier );?></a>
+			<a class="p-2 text-dark" href="#"><b>Bienvenid@</b> <br><?=$model->getFirstName( $identifier );?> <?=$model->getLastName( $identifier );?></a>
 		</nav>
 		<button type="button" class="btn btn-outline-danger" onClick="window.location.href='/logout';">
 			Salir
