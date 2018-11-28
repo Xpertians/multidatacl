@@ -1,7 +1,11 @@
 <?php
 $identifier_session = !empty( Hybrid_Auth::storage() ) ? Hybrid_Auth::storage()->get( 'user' ) : null;
 include_once("header.php");
-include_once('navbar.php');
+if (isset( $identifier_session ) && ! empty( $identifier_session )) {
+	include_once('navbar_private.php');
+}else{
+	include_once('navbar_public.php');
+}
 include_once('modal.php');
 if(isset($_GET['err']) && !empty($_GET['err'])) {
 	echo '<div>Authentication failed. Please try again</div>';
