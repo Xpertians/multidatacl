@@ -15,7 +15,10 @@ return
         "providers"  => [
             "Google"   => [
                 "enabled" => true,
-                "keys"    => [ "id" => "541281255542-sh28tca2qjek66ln5elkgaaijv8odg4p.apps.googleusercontent.com", "secret" => "SlnflF5xjMdNUVfaKtd3oSr_" ],
+                "keys"    => [
+                    "id" => "204025247100-7lefpfc4arp25fkfffnj2hg2bbd9imuj.apps.googleusercontent.com",
+                    "secret" => "pEiZ1DtkxUjWKiudNSQFLouu"
+                    ],
             ],
             "Facebook" => [
                 "enabled"        => false,
