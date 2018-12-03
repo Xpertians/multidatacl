@@ -19,13 +19,22 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
              <h4 class="my-0 font-weight-normal">Veh&iacute;culos</h4>
            </div>
            <div class="card-body">
-             <h2 class="card-title pricing-card-title">Informaci&oacute;n</h2>
-						 <ul class="list-styled mt-3 mb-4">
-               <li>Datos veh&iacute;culo</li>
-               <li>Transporte p&uacute;blico</li>
-               <li>Registro policial</li>
-							 <li>Propietarios</li>
-             </ul>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
            </div>
 					 <div class="card-footer bg-transparent border-warning">
 						 <button type="button" class="btn btn-md btn-block btn-warning" onClick="window.location.href='/home/cars';">Realizar busqueda</button>
