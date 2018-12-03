@@ -21,7 +21,7 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
                     <h4 class="my-0 font-weight-normal">Veh&iacute;culos</h4>
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form id="searchForm" name="searchForm">
                         <div class="form-group">
                             <label for="inputPlate">Patente </label>
                             <input type="text" class="form-control" id="inputPlate" aria-describedby="inputPlate" placeholder="ABCD12">
@@ -29,7 +29,7 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
                     </form>
                 </div>
                 <div class="card-footer bg-transparent border-warning">
-                    <button type="button" class="btn btn-md btn-block btn-warning" onClick="window.location.href='/home/cars';">Buscar</button>
+                    <button type="button" class="btn btn-md btn-block btn-warning" onClick="document.getElementById('searchForm').submit();">Buscar</button>
                 </div>
             </div>
           </div>
