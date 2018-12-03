@@ -34,9 +34,9 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
             </div>
           </div>
           <div class="col-sm-8">
-            <div class="card card-accent-warning border-warning">
-               <div class="card-header">
-                 <h4 class="my-0 font-weight-normal">Veh&iacute;culos</h4>
+            <div class="card">
+               <div class="card-header text-white bg-warning text-right">
+                 <h4 class="my-0 font-weight-normal">Resultados</h4>
                </div>
 
 <table class="table table-bordered">
