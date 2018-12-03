@@ -34,8 +34,8 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
             </div>
           </div>
           <div class="col-sm-8">
-            <div class="card card-accent-warning">
-               <div class="card-header text-white">
+            <div class="card card-accent-warning border-warning">
+               <div class="card-header">
                  <h4 class="my-0 font-weight-normal">Veh&iacute;culos</h4>
                </div>
 
