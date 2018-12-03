@@ -15,7 +15,6 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
      <div class="container-fluid">
         <div class="card-deck mb-3 text-center">
             
-<div class="row">
   <div class="col-sm-4">
     <div class="card">
       <div class="card-body">
@@ -34,7 +33,6 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
       </div>
     </div>
   </div>
-</div>
 
          
        
