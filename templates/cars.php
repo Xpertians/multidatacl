@@ -42,7 +42,7 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
 <table class="table table-borderless">
   <tbody>
     <tr>
-      <th scope="row">1</th>
+      <th scope="row" class="text-right">1</th>
       <td>Mark</td>
       <th scope="row">1</th>
       <td>@mdo</td>
