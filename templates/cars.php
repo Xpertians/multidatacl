@@ -11,7 +11,6 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
 	echo '<div>Authentication failed. Please try again</div>';
 }
 ?>
-
      <div class="container">
          
         <div class="row">
