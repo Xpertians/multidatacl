@@ -20,7 +20,7 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
                     <h4 class="my-0 font-weight-normal">Veh&iacute;culos</h4>
                 </div>
                 <div class="card-body">
-                    <form id="searchForm" name="searchForm" action="/home/cars" method="post">
+                    <form id="searchForm" name="searchForm" action="/home/cars" method="get">
                         <div class="form-group">
                             <label for="inputPlate">Patente </label>
                             <input type="text" class="form-control" id="inputPlate" aria-describedby="inputPlate" placeholder="ABCD12">
