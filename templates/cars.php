@@ -12,12 +12,6 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
 }
 ?>
 
-     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-       <h1 class="display-4">MultiDATA Chile</h1>
-       <p class="lead">
-				 Somos es la base de datos referencial, comunitaria y abierta más grande del país. Ofrecemos un servicio de consulta de datos publicos y abiertos al alcance de cualquier persona que requiera obtener datos de referencia sobre vehículos, personas y sociedades.
-			 </p>
-     </div>
      <div class="container">
        <div class="card-deck mb-3 text-center">
          <div class="card mb-4 shadow-sm">
