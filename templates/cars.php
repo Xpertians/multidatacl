@@ -38,11 +38,19 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
                <div class="card-header text-white bg-warning">
                  <h4 class="my-0 font-weight-normal">Veh&iacute;culos</h4>
                </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
+                  <div class="brand-card-body">
+                    <div>
+                      <div class="text-value">89k</div>
+                      <div class="text-uppercase text-muted small">Lorem ipsum</div>
+                    </div>
+                    <div>
+                      <div class="text-value">459</div>
+                      <div class="text-uppercase text-muted small">Lorem ipsum</div>
+                    </div>
+                  </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
             </div>
           </div>
         </div>
