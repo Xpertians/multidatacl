@@ -38,51 +38,14 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
                <div class="card-header text-white bg-warning">
                  <h4 class="my-0 font-weight-normal">Veh&iacute;culos</h4>
                </div>
-               <div class="card-body">
-                    xxxx
-               </div>
-                <div class="card-footer bg-transparent border-warning">
-                 <button type="button" class="btn btn-md btn-block btn-warning" onClick="window.location.href='/home/cars';">Buscar</button>
-                </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
             </div>
           </div>
         </div>
-
-         
-       <div class="card-deck mb-3 text-center">
-         <div class="card w-25 mb-4 shadow-sm">
-           <div class="card-header text-white bg-warning">
-             <h4 class="my-0 font-weight-normal">Veh&iacute;culos</h4>
-           </div>
-           <div class="card-body">
-                <form>
-                  <div class="form-group">
-                    <label for="inputPlate">Patente </label>
-                    <input type="text" class="form-control" id="inputPlate" aria-describedby="inputPlate" placeholder="ABCD12">
-                  </div>
-                </form>
-           </div>
-            <div class="card-footer bg-transparent border-warning">
-             <button type="button" class="btn btn-md btn-block btn-warning" onClick="window.location.href='/home/cars';">Buscar</button>
-            </div>
-         </div>
-         <div class="card w-75 mb-8 shadow-sm">
-           <div class="card-header text-white bg-success">
-             <h4 class="my-0 font-weight-normal">Personas</h4>
-           </div>
-           <div class="card-body">
-			 <h2 class="card-title pricing-card-title">Informaci&oacute;n</h2>
-			 <ul class="list-styled mt-3 mb-4">
-               <li>Registro electoral</li>
-               <li>Informaci&oacute;n tributaria</li>
-               <li>Gobierno transparente</li>
-             </ul>
-           </div>
-			 <div class="card-footer bg-transparent border-success">
-				 <button type="button" class="btn btn-md btn-block btn-outline-success">Pronto</button>
-			 </div>
-         </div>
-       </div>
        
 <?php
 include_once("footer.php");
