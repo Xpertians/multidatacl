@@ -21,9 +21,8 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
            <div class="card-body">
                 <form>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">Para motos agregue un 0. Ejemplo LY391 debe ser <small>LY</small>0<small>391</small>.</small>
+                    <label for="inputPlate">Patente </label>
+                    <input type="text" class="form-control" id="inputPlate" aria-describedby="inputPlate" placeholder="ABCD12">
                   </div>
                 </form>
            </div>
