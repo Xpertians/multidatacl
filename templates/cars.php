@@ -39,7 +39,7 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
                  <h4 class="my-0 font-weight-normal">Resultados</h4>
                </div>
 
-<table class="table table-bordered">
+<table class="table table-borderless">
   <tbody>
     <tr>
       <th scope="row">1</th>
