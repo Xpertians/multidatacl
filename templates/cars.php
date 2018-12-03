@@ -23,7 +23,7 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
                     <form id="searchForm" name="searchForm" action="/home/cars" method="get">
                         <div class="form-group">
                             <label for="inputPlate">Patente </label>
-                            <input type="text" class="form-control" id="inputPlate" aria-describedby="inputPlate" placeholder="ABCD12">
+                            <input type="text" class="form-control" id="inputPlate" name="inputPlate" aria-describedby="inputPlate" placeholder="ABCD12">
                         </div>
                     </form>
                 </div>
