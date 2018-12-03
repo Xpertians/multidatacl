@@ -13,7 +13,8 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
 ?>
 
      <div class="container-fluid">
-         
+        <div class="card-deck mb-3 text-center">
+            
 <div class="row">
   <div class="col-sm-4">
     <div class="card">
@@ -36,7 +37,7 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
 </div>
 
          
-       <div class="card-deck mb-3 text-center">
+       
          <div class="card mb-4 shadow-sm">
            <div class="card-header text-white bg-warning">
              <h4 class="my-0 font-weight-normal">Veh&iacute;culos</h4>
