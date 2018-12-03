@@ -13,29 +13,8 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
 ?>
 
      <div class="container-fluid">
-        <div class="card-deck mb-3 text-center">
-            
-  <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-8">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
+        <div class="card-deck text-center">
 
-         
-       
          <div class="card mb-4 shadow-sm">
            <div class="card-header text-white bg-warning">
              <h4 class="my-0 font-weight-normal">Veh&iacute;culos</h4>
