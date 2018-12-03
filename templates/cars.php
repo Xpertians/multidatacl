@@ -35,11 +35,15 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
           </div>
           <div class="col-sm-8">
             <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+               <div class="card-header text-white bg-warning">
+                 <h4 class="my-0 font-weight-normal">Veh&iacute;culos</h4>
+               </div>
+               <div class="card-body">
+                    xxxx
+               </div>
+                <div class="card-footer bg-transparent border-warning">
+                 <button type="button" class="btn btn-md btn-block btn-warning" onClick="window.location.href='/home/cars';">Buscar</button>
+                </div>
             </div>
           </div>
         </div>
