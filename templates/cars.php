@@ -19,18 +19,17 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
              <h4 class="my-0 font-weight-normal">Veh&iacute;culos</h4>
            </div>
            <div class="card-body">
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">Para motos agregue un 0. Ejemplo LY391 debe ser <small>LY</small>0<small>391</small>.</small>
-  </div>
-  <button type="button" class="btn btn-primary">Buscar</button>
-</form>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">Para motos agregue un 0. Ejemplo LY391 debe ser <small>LY</small>0<small>391</small>.</small>
+                  </div>
+                </form>
            </div>
-					 <div class="card-footer bg-transparent border-warning">
-						 <button type="button" class="btn btn-md btn-block btn-warning" onClick="window.location.href='/home/cars';">Realizar busqueda</button>
-					 </div>
+            <div class="card-footer bg-transparent border-warning">
+             <button type="button" class="btn btn-md btn-block btn-warning" onClick="window.location.href='/home/cars';">Buscar</button>
+            </div>
          </div>
          <div class="card mb-4 shadow-sm">
            <div class="card-header text-white bg-success">
