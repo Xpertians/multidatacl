@@ -39,27 +39,27 @@ if(isset($_GET['err']) && !empty($_GET['err'])) {
                  <h4 class="my-0 font-weight-normal">Resultados</h4>
                </div>
 
-<table class="table table-borderless">
-  <tbody>
-    <tr>
-      <th scope="row" class="text-right">1</th>
-      <td>Mark</td>
-      <th scope="row">1</th>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <th scope="row">1</th>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+                <table class="table table-borderless">
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="text-right">1</th>
+                      <td>Mark</td>
+                      <th scope="row" class="text-right">1</th>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-right">2</th>
+                      <td>Jacob</td>
+                      <th scope="row" class="text-right">1</th>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-right">3</th>
+                      <td colspan="2">Larry the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
 
                 <div class="card-footer">
                   <small class="text-muted">Last updated 3 mins ago</small>
