@@ -30,7 +30,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 		<div class="container">
 			<div class="section-title text-center">
 				<h2>Cómo funciona</h2>
-				<p>Procesamos datos abiertos de fuentes públicas para generar informaci&oacute;n &uacute;til a la ciudadan&iacute;a.</p>
+				<p>Procesamos datos abiertos de fuentes públicas para generar informaci&oacute;n &uacute;til para la ciudadan&iacute;a.</p>
 			</div>
 			<div class="row">
 				<div class="col-md-4 process">
@@ -50,7 +50,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 						</figure>
 						<br>
 						<h4>Procesamos</h4>
-						<p>Usamos "Machine Learning" para crear relaciones para enriquecer la informaci&oacute;n,</p>
+						<p>Usamos "Machine Learning" para crear relaciones y enriquecer la informaci&oacute;n,</p>
 					</div>
 				</div>
 				<div class="col-md-4 process">
