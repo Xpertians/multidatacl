@@ -10,7 +10,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 
 <section class="page-info-section">
 	<div class="container">
-		<h2>Veh&iacute;culos</h2>
+		<h2><i class="fa fa-car" onclick="window.location.href='/warpit/html/cars/';"></i> Veh&iacute;culos</h2>
 		<div class="site-beradcamb">
 			<a href="/">Principal</a>
 			<span><i class="fa fa-angle-right"></i> Veh&iacute;culos</span>

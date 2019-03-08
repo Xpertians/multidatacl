@@ -6,8 +6,6 @@
 	<meta name="description" content="MultiDATA - OpenDataCollector">
 	<meta name="keywords" content="MultiDATA, opendata, opendatacollector, autos, patentes, rutificador">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Favicon -->
-	<link href="/assets/imgs/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">

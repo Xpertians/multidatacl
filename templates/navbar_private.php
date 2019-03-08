@@ -13,9 +13,9 @@
 			<nav class="main-menu">
 				<ul class="menu-list">
           <li><a href="/"><b>Principal</b></a></li>
-          <li><a href="https://odc.xpertians.com/" target='_blank'><b>Desarrolladores</b></a></li>
-          <li><a href="https://opendatacollector.com/" target='_blank'><b>APIs</b></a></li>
-          <li><a href="https://github.com/Xpertians/odc/issues/new" target='_blank'><b>Ayuda</b></a></li>
+          <li><a href="/"><i class="fa fa-car"></i> <b>Veh&iacute;culos</b></a></li>
+          <li><a href="/"><i class="fa fa-user"></i> <b>Personas</b> (Pronto)</a></li>
+          <li><a href="/"><i class="fa fa-briefcase"></i> <b>Empresas</b> (Pronto)</a></li>
 				</ul>
 			</nav>
 		</div>

@@ -4,7 +4,7 @@
     <div class="row spad">
       <div class="col-md-6 col-lg-3 footer-widget">
         <img src="/assets/imgs/logo.png" alt="">
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum.</p>
+        <p><small>Fuente de datos: <br><a href="https://OpenDataCollector.com" target="_blank">OpenDataCollector</a> © <?php echo date('Y'); ?></small></p>
       </div>
       <div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
         <h5 class="widget-title">Resources</h5>
@@ -35,13 +35,12 @@
         <div class="col-lg-4 store-links text-center text-lg-left pb-3 pb-lg-0">
           <span>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            Dise&ntilde;ado con <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://colorlib.com" target="_blank">Colorlib</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </span>
         </div>
         <div class="col-lg-8 text-center text-lg-right">
           <ul class="footer-nav">
-            <li>OpenDataCollector © <?php echo date('Y'); ?> <a href='http://xpertians.com' target='_blank'>Xpertians</a></li>
             <li><a href="https://odc.xpertians.com/docs/terminos-de-servicio/" target="_blank">T&eacute;rminos de Uso</a></li>
             <li><a href="https://odc.xpertians.com" target="_blank">Desarrolladores</a></li>
             <li><a href="https://github.com/Xpertians/odc/issues/new" target="_blank">Ayuda</a></li>
