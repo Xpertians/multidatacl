@@ -6,72 +6,91 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 }else{
 	include_once('navbar_public.php');
 }
-include_once('modal.php');
-if(isset($_GET['err']) && !empty($_GET['err'])) {
-	echo '<div>Authentication failed. Please try again</div>';
-}
 ?>
 
-     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-       <h1 class="display-4">MultiDATA Chile</h1>
-       <p class="lead">
-				 Somos es la base de datos referencial, comunitaria y abierta más grande del país. Ofrecemos un servicio de consulta de datos publicos y abiertos al alcance de cualquier persona que requiera obtener datos de referencia sobre vehículos, personas y sociedades.
-			 </p>
-     </div>
-     <div class="container">
-       <div class="card-deck mb-3 text-center">
-         <div class="card mb-4 shadow-sm">
-           <div class="card-header text-white bg-warning">
-             <h4 class="my-0 font-weight-normal">Veh&iacute;culos</h4>
-           </div>
-           <div class="card-body">
-             <h2 class="card-title pricing-card-title">Informaci&oacute;n</h2>
-						 <ul class="list-styled mt-3 mb-4">
-               <li>Datos veh&iacute;culo</li>
-               <li>Transporte p&uacute;blico</li>
-               <li>Registro policial</li>
-							 <li>Propietarios</li>
-             </ul>
-           </div>
-					 <div class="card-footer bg-transparent border-warning">
-						 <button type="button" class="btn btn-md btn-block btn-warning" onClick="window.location.href='/home/cars';">Realizar busqueda</button>
-					 </div>
-         </div>
-         <div class="card mb-4 shadow-sm">
-           <div class="card-header text-white bg-success">
-             <h4 class="my-0 font-weight-normal">Personas</h4>
-           </div>
-           <div class="card-body">
-						 <h2 class="card-title pricing-card-title">Informaci&oacute;n</h2>
-						 <ul class="list-styled mt-3 mb-4">
-               <li>Registro electoral</li>
-               <li>Informaci&oacute;n tributaria</li>
-               <li>Gobierno transparente</li>
-             </ul>
-           </div>
-					 <div class="card-footer bg-transparent border-success">
-						 <button type="button" class="btn btn-md btn-block btn-outline-success">Pronto</button>
-					 </div>
-         </div>
-         <div class="card mb-4 shadow-sm">
-           <div class="card-header text-white bg-primary">
-             <h4 class="my-0 font-weight-normal">Sociedades</h4>
-           </div>
-           <div class="card-body">
-						 <h2 class="card-title pricing-card-title">Informaci&oacute;n</h2>
-						 <ul class="list-styled mt-3 mb-4">
-               <li>Informaci&oacute;n tributaria</li>
-               <li>Mercado y licitaciones</li>
-							 <li>Previsional y laboral</li>
-							 <li>Gobierno transparente</li>
-             </ul>
-           </div>
-					 <div class="card-footer bg-transparent border-primary">
-						 <button type="button" class="btn btn-md btn-block btn-outline-primary">Pronto</button>
-					 </div>
-         </div>
-       </div>
-       
-<?php
-include_once("footer.php");
-?>
+<section class="page-info-section">
+	<div class="container">
+		<h2>Veh&iacute;culos</h2>
+		<div class="site-beradcamb">
+			<a href="/">Principal</a>
+			<span><i class="fa fa-angle-right"></i> Veh&iacute;culos</span>
+		</div>
+	</div>
+</section>
+
+
+<!-- Blog section -->
+<section class="single-blog-page spad">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 sideber pt-5 pt-lg-0">
+				<div class="widget-area">
+					<h4 class="widget-title">Busqueda de vehículos</h4>
+					<p>Ingrese la patente a buscar, para patentes de motos debe agregar un 0, por ejemplo AB123 debe ser AB0123.</p>
+					<form class="widget-subscribe-from">
+						<input type="text" placeholder="AB0123">
+						<button class="site-btn sb-full-- sb-gradients">Buscar Patente</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<div class="blog-item bi-feature">
+					<div class="blog-text">
+						<h2 class="blog-title"><a href="">This Week in Bitcoin: Up, Down and Sideways</a></h2>
+						<div class="post-meta">
+							<div class="post-tags">
+								<a href="#">Multipopuse</a>
+								<a href="#">Fashion</a>
+								<a href="#">Blogs</a>
+							</div>
+						</div>
+
+						<h4>You May Also Like</h4>
+						<form class="comment-form">
+							<div class="form-group">
+								<input type="text" placeholder="Your name *:">
+								<label></label>
+							</div>
+							<div class="form-group">
+								<input type="email" placeholder="Your email *:">
+								<label></label>
+							</div>
+							<div class="form-group">
+								<input type="text" placeholder="Your Phone *:">
+								<label></label>
+							</div>
+							<div class="form-group clearfix">
+								<textarea placeholder="Your comment"></textarea>
+								<label></label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<section class="newsletter-section gradient-bg">
+	<div class="container text-white">
+		<div class="row">
+			<div class="col-lg-7 newsletter-text">
+				<h2>Subscribe to our Newsletter</h2>
+				<p>Sign up for our weekly industry updates, insider perspectives and in-depth market analysis.</p>
+			</div>
+			<div class="col-lg-5 col-md-8 offset-lg-0 offset-md-2">
+				<form class="newsletter-form">
+					<input type="text" placeholder="Enter your email">
+					<button>Get Started</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+	<?php
+	include_once("footer.php");
+	?>

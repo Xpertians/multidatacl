@@ -1,13 +1,27 @@
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-		<h4 class="my-0 mr-md-auto font-weight-normal">
-			<a href="/"><img src="/assets/imgs/multidata.png" height='60px'></a>
-		</h4>
-		<nav class="my-2 my-md-0 mr-md-3">
-			<a class="p-2 text-dark" href="/home">Principal</a>
-			<a class="p-2 text-dark" href="#">Proyecto</a>
-			<a class="p-2 text-dark" target="_blank" href="https://OpenDataCollector.com">API (OpenDataCollector)</a>
-		</nav>
-		<button type="button" class="btn btn-outline-primary active" data-toggle="modal" data-target="#sem-login">
-			Ingresar
-		</button>
-	</div>
+<!-- Header section -->
+<header class="header-section clearfix">
+  <div class="container-fluid">
+    <a href="/" class="site-logo">
+      <img src="/assets/imgs/logo.png" alt="">
+    </a>
+    <div class="responsive-bar"><i class="fa fa-bars"></i></div>
+    <a href="" class="user"><i class="fa fa-user"></i></a>
+    <a href="/login/google" class="site-btn btn-primary">
+      <img src="/assets/imgs/google.png" height=20px> Ingresar usando <b>Google</b>
+    </a>
+    <nav class="main-menu">
+      <ul class="menu-list">
+        <li><a href="/"><b>Principal</b></a></li>
+        <li><a href="https://odc.xpertians.com/" target='_blank'><b>Desarrolladores</b></a></li>
+        <li><a href="https://opendatacollector.com/" target='_blank'><b>APIs</b></a></li>
+        <li><a href="https://github.com/Xpertians/odc/issues/new" target='_blank'><b>Ayuda</b></a></li>
+        <?php
+        if(isset($_GET['err']) && !empty($_GET['err'])) {
+          echo '<li><a href="">Ha ocurrido un error, intente nuevamente.</a></li>';
+        }
+        ?>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Header section end -->

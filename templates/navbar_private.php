@@ -1,17 +1,23 @@
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-		<h4 class="my-0 mr-md-auto font-weight-normal">
-			<a href="/"><img src="/assets/imgs/multidata.png" height='60px'></a>
-		</h4>
-		<div class="image-container">
-		    <img src="<?=$model->getAvatarUrl( $identifier_session );?>" class="rounded-circle" height="40px;">
+  <!-- Header section -->
+	<header class="header-section clearfix">
+		<div class="container-fluid">
+			<a href="/" class="site-logo">
+        <img src="<?=$model->getAvatarUrl( $identifier_session );?>" class="rounded-circle" height="40px;">
+        <?=$model->getFirstName( $identifier_session );?> <?=$model->getLastName( $identifier_session );?>
+			</a>
+			<div class="responsive-bar"><i class="fa fa-bars"></i></div>
+			<a href="" class="user"><i class="fa fa-user"></i></a>
+      <a href="/logout" class="site-btn btn-primary">
+        <b>Desconectarse</b>
+      </a>
+			<nav class="main-menu">
+				<ul class="menu-list">
+          <li><a href="/"><b>Principal</b></a></li>
+          <li><a href="https://odc.xpertians.com/" target='_blank'><b>Desarrolladores</b></a></li>
+          <li><a href="https://opendatacollector.com/" target='_blank'><b>APIs</b></a></li>
+          <li><a href="https://github.com/Xpertians/odc/issues/new" target='_blank'><b>Ayuda</b></a></li>
+				</ul>
+			</nav>
 		</div>
-		<nav class="my-2 my-md-0 mr-md-3">
-			<a class="text-dark" href="#">
-			    <b>Bienvenid@</b> <br>
-			    <?=$model->getFirstName( $identifier_session );?> <?=$model->getLastName( $identifier_session );?>
-		    </a>
-		</nav>
-		<button type="button" class="btn btn-outline-danger" onClick="window.location.href='/logout';">
-			Desconectar
-		</button>
-	</div>
+	</header>
+	<!-- Header section end -->
