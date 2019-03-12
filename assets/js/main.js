@@ -90,8 +90,7 @@ $(function() {
 				contentType: "application/json",
 				data: dataTest ,
 				success: function(data) {
-					var response = JSON.parse(data);
-					alert(response);
+					alert(data);
 				},
 				error: function(data) {console.log(data); },
 				dataType: 'json',
