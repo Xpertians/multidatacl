@@ -91,7 +91,7 @@ $(function() {
 				contentType: "application/json",
 				data: dataTest ,
 				success: function(data) {
-					$('#summary').html(JSON.stringify(data));
+					$('#summary').html( JSON.stringify(data) );
 				},
 				error: function(data) {console.log(data); },
 				complete: function (res) {
