@@ -7,19 +7,19 @@
         <p><small>Fuente de datos: <br><a href="https://OpenDataCollector.com" target="_blank">OpenDataCollector</a> © <?php echo date('Y'); ?></small></p>
       </div>
       <div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
-        <h5 class="widget-title">Resources</h5>
+        <h5 class="widget-title">Recursos</h5>
         <ul>
-          <li><a href="#">How to Buy Coin</a></li>
-          <li><a href="#">Coin Overview</a></li>
-          <li><a href="#">Blog News</a></li>
+          <li><a href="#">Actualizar datos</a></li>
+          <li><a href="#">Eliminar registros</a></li>
+          <li><a href="https://OpenDataCollector.com" target="_blank">API de datos</a></li>
         </ul>
       </div>
       <div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
         <h5 class="widget-title">Quick Links</h5>
         <ul>
-          <li><a href="#">Network Stats</a></li>
-          <li><a href="#">Block Explorers</a></li>
-          <li><a href="#">Governance</a></li>
+          <li><a href="https://odc.xpertians.com" target="_blank">Documentaci&oacute;n T&eacute;cnica</a></li>
+          <li><a href="https://github.com/Xpertians/odc/issues/new" target="_blank">Ayuda</a></li>
+          <li><a href="https://github.com/Xpertians/odc/issues/new">Contacto</a></li>
         </ul>
       </div>
       <div class="col-md-6 col-lg-3 footer-widget pl-lg-5 pl-3">
