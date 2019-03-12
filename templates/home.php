@@ -45,25 +45,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 							</div>
 						</div>
 
-						<h4>You May Also Like</h4>
-						<form class="comment-form">
-							<div class="form-group">
-								<input type="text" placeholder="Your name *:">
-								<label></label>
-							</div>
-							<div class="form-group">
-								<input type="email" placeholder="Your email *:">
-								<label></label>
-							</div>
-							<div class="form-group">
-								<input type="text" placeholder="Your Phone *:">
-								<label></label>
-							</div>
-							<div class="form-group clearfix">
-								<textarea placeholder="Your comment"></textarea>
-								<label></label>
-							</div>
-						</form>
+						<h4>Detalles</h4>
 
 						<table class="table table-bordered">
 						  <thead>
