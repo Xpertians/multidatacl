@@ -84,7 +84,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 
 
 
-<button id="createPin"></button>
+<button id="createPin">xx</button>
 <script>
 $(function() {
     $('#createPin').click(function(e) {
