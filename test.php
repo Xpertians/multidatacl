@@ -1,8 +1,5 @@
-{
-  "data": [{
-    "Chief": "Max",
-    "temperature": "65",
-    "done": "yes",
-    "cost": 24
-  }]
-}
+<?php
+header('Content-type: application/json');
+echo json_encode( array(
+  'user'  => 'test'
+));

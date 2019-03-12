@@ -85,6 +85,7 @@ $(function() {
 			var urlAjax		= "/test.php";
 
 			$.ajax({
+				cache:false,
 				type: "POST",
 				url: urlAjax,
 				contentType: "application/json",
