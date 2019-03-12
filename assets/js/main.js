@@ -92,11 +92,10 @@ $(function() {
 				data: dataTest ,
 				error: function(data) {console.log(data); },
 				complete: function (res) {
-          //var response = jQuery.parseJSON(JSON.stringify(res));
 					var response = JSON.stringify(res.responseText);
 					document.getElementById("#summary").innerHTML=response;
 					alert(jQuery.parseJSON(response));
-        },
+				},
 				dataType: 'json',
 				beforeSend: function (xhr) {
 					xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
