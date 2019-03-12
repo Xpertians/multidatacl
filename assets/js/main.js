@@ -89,7 +89,10 @@ $(function() {
 				url: urlAjax,
 				contentType: "application/json",
 				data: dataTest ,
-				success: function(data) { alert("ajax worked"); },
+				success: function(data) {
+					var response = JSON.parse(res);
+					alert(response);
+				},
 				error: function(data) {console.log(data); },
 				dataType: 'json',
 				beforeSend: function (xhr) {
