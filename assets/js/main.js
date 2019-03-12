@@ -96,8 +96,8 @@ $(function() {
 				error: function(data) {console.log(data); },
 				complete: function (res) {
           var response = JSON.parse(res);
-					alert(response)
-        }
+					alert(response);
+        },
 				dataType: 'json',
 				beforeSend: function (xhr) {
 					xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
