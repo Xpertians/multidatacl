@@ -82,7 +82,7 @@ $(function() {
 
 
 			var dataTest	= { "name": "test", "email": "pepe@peperoni.com", "password": "sarasa" }
-			var urlAjax		= "test.php";
+			var urlAjax		= "/test.php";
 
 			$.ajax({
 				type: "POST",
