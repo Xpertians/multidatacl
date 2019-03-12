@@ -85,6 +85,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 
 
 <button id="createPin">xx</button>
+<div id="#summary">This text will be replaced when the onclick event (link is clicked) is triggered.</div>
 
 
 <?php

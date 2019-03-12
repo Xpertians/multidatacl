@@ -90,7 +90,9 @@ $(function() {
 				contentType: "application/json",
 				data: dataTest ,
 				success: function(data) {
-					alert(data);
+					var r = JSON.parse(res.responseText);
+					alert(r)
+					//$('#summary').html(data);
 				},
 				error: function(data) {console.log(data); },
 				dataType: 'json',
