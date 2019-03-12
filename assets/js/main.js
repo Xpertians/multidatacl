@@ -90,13 +90,10 @@ $(function() {
 				url: urlAjax,
 				contentType: "application/json",
 				data: dataTest ,
-				success: function(data) {
-					$('#summary').html( JSON.stringify(data) );
-				},
 				error: function(data) {console.log(data); },
 				complete: function (res) {
           //var response = jQuery.parseJSON(JSON.stringify(res));
-					var response = JSON.stringify(res);
+					var response = JSON.stringify(res.data);
 					alert(response);
         },
 				dataType: 'json',
