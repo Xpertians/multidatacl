@@ -95,7 +95,7 @@ $(function() {
 				},
 				error: function(data) {console.log(data); },
 				complete: function (res) {
-          var response = JSON.parse(res);
+          var response = jQuery.parseJSON(JSON.stringify(res));
 					alert(response);
         },
 				dataType: 'json',
