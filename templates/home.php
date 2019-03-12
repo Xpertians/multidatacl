@@ -29,7 +29,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 					<p>Ingrese la patente a buscar, para patentes de motos debe agregar un 0, por ejemplo AB123 debe ser AB0123.</p>
 					<form class="widget-subscribe-from">
 						<input type="text" placeholder="AB0123">
-						<button class="site-btn sb-full-- sb-gradients">Buscar Patente</button>
+						<button class="site-btn sb-full-- sb-gradients" id="runSearch">Buscar Patente</button>
 					</form>
 				</div>
 			</div>
@@ -44,34 +44,35 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 								<a href="#">Policial</a>
 							</div>
 						</div>
-
-						<h4>DETALLES</h4>
-						<table class="table table-bordered">
-						  <thead>
-						    <tr>
-						      <th scope="col">#</th>
-						      <th scope="col">First</th>
-						      <th scope="col">Last</th>
-						    </tr>
-						  </thead>
-						  <tbody>
-						    <tr>
-						      <th scope="row">1</th>
-						      <td>Mark</td>
-						      <td>Otto</td>
-						    </tr>
-						    <tr>
-						      <th scope="row">2</th>
-						      <td>Jacob</td>
-						      <td>Thornton</td>
-						    </tr>
-						    <tr>
-						      <th scope="row">3</th>
-						      <td colspan="2">Larry the Bird</td>
-						    </tr>
-						  </tbody>
-						</table>
-
+						
+						<div id="#summary">
+							<h4>DETALLES</h4>
+							<table class="table table-bordered">
+							  <thead>
+							    <tr>
+							      <th scope="col">#</th>
+							      <th scope="col">First</th>
+							      <th scope="col">Last</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <th scope="row">1</th>
+							      <td>Mark</td>
+							      <td>Otto</td>
+							    </tr>
+							    <tr>
+							      <th scope="row">2</th>
+							      <td>Jacob</td>
+							      <td>Thornton</td>
+							    </tr>
+							    <tr>
+							      <th scope="row">3</th>
+							      <td colspan="2">Larry the Bird</td>
+							    </tr>
+							  </tbody>
+							</table>
+						</div>
 
 
 					</div>
@@ -81,12 +82,6 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 		</div>
 	</div>
 </section>
-
-
-
-
-<div id="#summary">This text will be replaced when the onclick event (link is clicked) is triggered.</div>
-<button id="createPin">xx</button>
 
 <?php
 include_once("facts.php");

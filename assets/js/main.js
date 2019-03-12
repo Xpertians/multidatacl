@@ -77,7 +77,7 @@ $(window).on('load', function() {
 
 
 $(function() {
-    $('#createPin').click(function(e) {
+    $('#runSearch').click(function(e) {
 			e.preventDefault();
 
 
