@@ -2,7 +2,7 @@
 ------------------------------------
 	Cryptocurrency - Landing Page Template
 	Version: 1.0
- ------------------------------------ 
+ ------------------------------------
  ====================================*/
 
 
@@ -13,7 +13,7 @@ $(window).on('load', function() {
 	/*------------------
 		Preloder
 	--------------------*/
-	$(".loader").fadeOut(); 
+	$(".loader").fadeOut();
 	$("#preloder").delay(400).fadeOut("slow");
 
 });
@@ -37,7 +37,7 @@ $(window).on('load', function() {
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
 
-	
+
 	/*------------------
 		Review
 	--------------------*/
@@ -73,20 +73,32 @@ $(window).on('load', function() {
     	animateIn: 'fadeInDown',
 	});
 
-
-
-	 /*------------------
-		Contact Form
-	--------------------*/
-    $(".check-form").focus(function () {
-        $(this).next("span").addClass("active");
-    });
-    $(".check-form").blur(function () {
-        if ($(this).val() === "") {
-            $(this).next("span").removeClass("active");
-        }
-    });
-
-
 })(jQuery);
 
+
+$(function() {
+    $('#createPin').click(function(e) {
+			e.preventDefault();
+
+
+			var dataTest	= { "name": "test", "email": "pepe@peperoni.com", "password": "sarasa" }
+			var urlAjax		= "http://ds.opendatacollector.com/api/v1/personas";
+
+			$.ajax({
+				type: "POST",
+				url: urlAjax,
+				contentType: "application/json",
+				data: dataTest ,
+				success: function(data) { alert("ajax worked"); },
+				error: function(data) {console.log(data); },
+				dataType: 'json',
+				beforeSend: function (xhr) {
+					xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+				},
+				headers: {
+					'Access-Control-Allow-Origin': '*'
+				}
+			});
+
+	});
+});
