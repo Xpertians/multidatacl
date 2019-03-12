@@ -94,7 +94,7 @@ $(function() {
 				complete: function (res) {
           //var response = jQuery.parseJSON(JSON.stringify(res));
 					var response = JSON.stringify(res.responseText);
-					alert(response);
+					$('#summary').html(response);
         },
 				dataType: 'json',
 				beforeSend: function (xhr) {
