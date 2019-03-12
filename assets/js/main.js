@@ -82,7 +82,7 @@ $(function() {
 
 
 			var dataTest	= { "name": "test", "email": "pepe@peperoni.com", "password": "sarasa" }
-			var urlAjax		= "http://ds.opendatacollector.com/api/v1/personas";
+			var urlAjax		= "test.php";
 
 			$.ajax({
 				type: "POST",
