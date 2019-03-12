@@ -36,12 +36,12 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 			<div class="col-lg-8">
 				<div class="blog-item bi-feature">
 					<div class="blog-text">
-						<h2 class="blog-title"><a href="">This Week in Bitcoin: Up, Down and Sideways</a></h2>
+						<h2 class="blog-title"><a href="">Resultados de su busqueda</a></h2>
 						<div class="post-meta">
 							<div class="post-tags">
-								<a href="#">Multipopuse</a>
-								<a href="#">Fashion</a>
-								<a href="#">Blogs</a>
+								<a href="#">Detalles</a>
+								<a href="#">Propietarios</a>
+								<a href="#">Policial</a>
 							</div>
 						</div>
 
@@ -64,6 +64,39 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 								<label></label>
 							</div>
 						</form>
+
+						<table class="table table-bordered">
+						  <thead>
+						    <tr>
+						      <th scope="col">#</th>
+						      <th scope="col">First</th>
+						      <th scope="col">Last</th>
+						      <th scope="col">Handle</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">1</th>
+						      <td>Mark</td>
+						      <td>Otto</td>
+						      <td>@mdo</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">2</th>
+						      <td>Jacob</td>
+						      <td>Thornton</td>
+						      <td>@fat</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">3</th>
+						      <td colspan="2">Larry the Bird</td>
+						      <td>@twitter</td>
+						    </tr>
+						  </tbody>
+						</table>
+
+
+
 					</div>
 				</div>
 			</div>
