@@ -84,9 +84,9 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 
 
 
-<button id="createPin">xx</button>
-<div id="#summary">This text will be replaced when the onclick event (link is clicked) is triggered.</div>
 
+<div id="#summary">This text will be replaced when the onclick event (link is clicked) is triggered.</div>
+<button id="createPin">xx</button>
 
 <?php
 include_once("facts.php");
