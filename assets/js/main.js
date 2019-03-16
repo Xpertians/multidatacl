@@ -89,7 +89,7 @@ $(function() {
 				type: "POST",
 				url: urlAjax,
 				contentType: "application/json",
-				data: dataTest ,
+				data: JSON.stringify(dataTest) ,
 				error: function(data) {console.log(data); },
 				complete: function (res) {
 					var response = JSON.stringify(res.responseText);
