@@ -70,7 +70,7 @@ $app->get( '/search/:driver', $authenticate($app), function ( $driver ) use ( $a
     }
 );
 
-$app->post('/search/:driver', function ($driver) use ( $app, $model ) {
+$app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $app, $model ) {
         $request    = $app->request();
         $body       = $request->getBody();
         $input      = json_decode($body); 
