@@ -57,12 +57,22 @@ $app->get( '/login/', $authenticate( $app ), function () use ( $app ) {
     }
 );
 
-$app->get( '/search/:driver', $authenticate($app), function ( $driver ) use ( $app, $model ) {
-        //$app->redirect( '/home/' );
-        echo "test".ucwords( $driver );
-        //exit;
+$app->get( '/search/', $authenticate($app), function () use ( $app ) {
+        $app->redirect( '/home/' );
     }
 );
+
+$app->get( '/search/:driver', $authenticate($app), function ( $driver ) use ( $app, $model ) {
+        echo "test".ucwords( $driver );
+    }
+);
+
+$app->post('/search/:driver', $authenticate($app), function ($driver, Request $request, Response $response)  use ( $app, $model ) {
+        $data           = $request->getParsedBody();
+        echo "DRIVER:".ucwords($driver)."=>".filter_var($data['plate'], FILTER_SANITIZE_STRING);
+    }
+);
+
 
 $app->get( '/login/:idp', function ( $idp ) use ( $app, $model ) {
         try {
