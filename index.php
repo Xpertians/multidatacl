@@ -39,7 +39,7 @@ $authenticate = function ( $app ) {
     };
 };
 
-$app->get( '/search/', $authenticate($app), function ( $idp ) use ( $app ) {
+$app->get( '/search/', $authenticate($app), function () use ( $app ) {
         //$app->redirect( '/home/' );
         echo "test".ucwords($idp);
         //exit;
