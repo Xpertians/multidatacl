@@ -39,13 +39,6 @@ $authenticate = function ( $app ) {
     };
 };
 
-$app->get( '/search/', $authenticate($app), function () use ( $app ) {
-        //$app->redirect( '/home/' );
-        echo "test";
-        //exit;
-    }
-);
-
 $app->get( '/', $authenticate($app), function () use ( $app ) {
         $app->redirect( '/home/' );
     }
@@ -61,6 +54,13 @@ $app->get( '/logout/', function () use ( $app, $model ) {
 
 $app->get( '/login/', $authenticate( $app ), function () use ( $app ) {
         $app->render( 'login.php' );
+    }
+);
+
+$app->get( '/search/:driver', $authenticate($app), function ( $driver ) use ( $app, $model ) {
+        //$app->redirect( '/home/' );
+        echo "test".ucwords( $driver );
+        //exit;
     }
 );
 
