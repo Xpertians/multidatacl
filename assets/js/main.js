@@ -81,8 +81,8 @@ $(function() {
 			e.preventDefault();
 
 
-			var dataTest	= { "name": "test", "email": "pepe@peperoni.com", "password": "sarasa" }
-			var urlAjax		= "/test.php";
+			var dataTest	= { "plate": "CFZP61"}
+			var urlAjax		= "/search/car";
 
 			$.ajax({
 				cache:false,
