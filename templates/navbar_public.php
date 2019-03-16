@@ -5,7 +5,7 @@
       <img src="/assets/imgs/logo.png" alt="">
     </a>
     <div class="responsive-bar"><i class="fa fa-bars"></i></div>
-    <a href="" class="user"><i class="fa fa-user"></i></a>
+    <a href="/login/google" class="user"><i class="fa fa-user"></i></a>
     <a href="/login/google" class="site-btn btn-primary">
       <img src="/assets/imgs/google.png" height=20px> Ingresar usando <b>Google</b>
     </a>
