@@ -70,12 +70,13 @@ $app->get( '/search/:driver', $authenticate($app), function ( $driver ) use ( $a
     }
 );
 
-$app->post('/search/car', function (Request $request, Response $response) {
-        $data           = $request->getParsedBody();
+$app->post('/search/:driver', function ($driver) use ( $app, $model ) {
+        $request    = $app->request();
+        $data       = $request->getParsedBody();
         //header('Content-type: application/json');
         echo json_encode( array(
           'qry'     => filter_var($data['plate'], FILTER_SANITIZE_STRING),
-          'driver'  => 'cars'
+          'driver'  => $driver
         ));
 
     }
