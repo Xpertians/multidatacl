@@ -66,7 +66,7 @@ $app->get( '/search/', $authenticate($app), function () use ( $app ) {
 );
 
 $app->get( '/search/:driver', $authenticate($app), function ( $driver ) use ( $app, $model ) {
-        echo "test".ucwords( $driver );
+        $app->redirect( '/home/' );
     }
 );
 
@@ -74,7 +74,7 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
         $request    = $app->request();
         $body       = $request->getBody();
         $input      = json_decode($body); 
-        //header('Content-type: application/json');
+        header('Content-type: application/json');
         echo json_encode( array(
           'qry'     => (string)$input->plate,
           'driver'  => $driver
@@ -82,7 +82,6 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
 
     }
 );
-
 
 $app->get( '/login/:idp', function ( $idp ) use ( $app, $model ) {
         try {
