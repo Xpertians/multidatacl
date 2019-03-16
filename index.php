@@ -72,7 +72,8 @@ $app->post('/search/:driver', $authenticate($app), function ($driver, Request $r
         //echo "DRIVER:".ucwords($driver)."=>".filter_var($data['plate'], FILTER_SANITIZE_STRING);
         header('Content-type: application/json');
         echo json_encode( array(
-          'plate'  => filter_var($data['plate'], FILTER_SANITIZE_STRING)
+          'qry'     => filter_var($data['plate'], FILTER_SANITIZE_STRING),
+          'driver'  => ucwords($driver)
         ));
 
     }
