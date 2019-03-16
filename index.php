@@ -67,7 +67,7 @@ $app->get( '/search/:driver', $authenticate($app), function ( $driver ) use ( $a
     }
 );
 
-$app->post('/search/:driver', $authenticate($app), function (Request $request, Response $response)  use ( $app, $model ) {
+$app->post('/search/car', $authenticate($app), function (Request $request, Response $response)  use ( $app, $model ) {
         $data           = $request->getParsedBody();
         //echo "DRIVER:".ucwords($driver)."=>".filter_var($data['plate'], FILTER_SANITIZE_STRING);
         header('Content-type: application/json');
