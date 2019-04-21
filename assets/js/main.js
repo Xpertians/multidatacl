@@ -79,8 +79,8 @@ $(window).on('load', function() {
 $(function() {
     $('#runSearch').click(function(e) {
 		e.preventDefault();
-		var dataPost	= { "qry": "CFZP61"}
-		var urlAjax		= "/search/car";
+		var dataPost	= { "qry": document.getElementById("qryValue").value}
+		var urlAjax		= "/search/"+document.getElementById("qryType").value;
 		$.ajax({
 			cache:false,
 			type: "POST",

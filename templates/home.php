@@ -28,7 +28,8 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 					<h4 class="widget-title">Busqueda de vehículos</h4>
 					<p>Ingrese la patente a buscar, para patentes de motos debe agregar un 0, por ejemplo AB123 debe ser AB0123.</p>
 					<form class="widget-subscribe-from">
-						<input type="text" placeholder="AB0123">
+						<input type="text" id="qryValue" placeholder="AB0123">
+						<input type="hidden" id="qryType" value="car">
 						<button class="site-btn sb-full-- sb-gradients" id="runSearch">Buscar Patente</button>
 					</form>
 				</div>
