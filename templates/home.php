@@ -7,7 +7,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 	include_once('navbar_public.php');
 }
 ?>
-
+//Requires Modification
 <section class="page-info-section">
 	<div class="container">
 		<h2><i class="fa fa-car" onclick="window.location.href='/warpit/html/cars/';"></i> Veh&iacute;culos</h2>

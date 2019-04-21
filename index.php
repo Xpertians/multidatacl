@@ -74,11 +74,59 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
         $request    = $app->request();
         $body       = $request->getBody();
         $input      = json_decode($body);
+        //$client     = new GuzzleHttp\Client();
+        use Guzzle\Http\Client;
+        $http       = new Client('https://opendatacollector.com/api/token', array(
+            'request.options' => array(
+                'exceptions' => false,
+            )
+        ));
+        $response = $request->send();
+        echo $response->getBody();
+        /*
         header('Content-type: application/json');
         echo json_encode( array(
           'qry'     => (string)$input->qry,
           'driver'  => $driver
         ));
+        */
+        echo '
+          <h4>DETALLES</h4>
+          <div class="post-meta">
+            <div class="post-tags">
+              <a href="#">Detalles</a>
+              <a href="#">Propietarios</a>
+              <a href="#">Policial</a>
+            </div>
+          </div>
+          <div class="details-table">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        ';
 
     }
 );
@@ -114,17 +162,18 @@ $app->get( '/login/:idp', function ( $idp ) use ( $app, $model ) {
 );
 
 $app->get( '/home/', $authenticate( $app ), function () use ( $app, $model ) {
-        $app->render( 'home.php', [ 'model' => $model ] );
+        //$app->render( 'home.php', [ 'model' => $model ] );
+        $app->redirect( '/home/cars' );
     }
 );
 
 $app->get( '/home/:qry', $authenticate( $app ), function ( $qry ) use ( $app, $model ) {
         switch($qry){
             case "cars":
-                 $app->render( 'home.php', [ 'model' => $model ] );
+                 $app->render( 'cars.php', [ 'model' => $model ] );
             break;
             default:
-                 $app->redirect( '/home/' );
+                 $app->redirect( '/home/cars' );
             break;
         }
     }

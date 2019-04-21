@@ -89,9 +89,10 @@ $(function() {
 			data: JSON.stringify(dataPost) ,
 			error: function(data) {console.log(data); },
 			complete: function (res) {
-				var response = JSON.stringify(res.responseText);
-				document.getElementById("#summary").innerHTML=response;
+				//var response = JSON.stringify(res.responseText);
+				//document.getElementById("#summary").innerHTML	= response;
 				//alert(jQuery.parseJSON(response));
+				document.getElementById("#summary").innerHTML	= res.responseText;
 			},
 			dataType: 'json',
 			beforeSend: function (xhr) {

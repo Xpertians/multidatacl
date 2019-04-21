@@ -13,9 +13,9 @@
 			<nav class="main-menu">
 				<ul class="menu-list">
           <li><a href="/"><b>Principal</b></a></li>
-          <li><a href="/"><i class="fa fa-car"></i> <b>Veh&iacute;culos</b></a></li>
-          <li><a href="/"><i class="fa fa-user"></i> <b>Personas</b> (Pronto)</a></li>
-          <li><a href="/"><i class="fa fa-briefcase"></i> <b>Empresas</b> (Pronto)</a></li>
+          <li><a href="/home/cars"><i class="fa fa-car"></i> <b>Veh&iacute;culos</b></a></li>
+          <li><a href="/home"><i class="fa fa-user"></i> <b>Personas</b> (Pronto)</a></li>
+          <li><a href="/home"><i class="fa fa-briefcase"></i> <b>Empresas</b> (Pronto)</a></li>
 				</ul>
 			</nav>
 		</div>
