@@ -121,7 +121,7 @@ $app->get( '/home/', $authenticate( $app ), function () use ( $app, $model ) {
 $app->get( '/home/:qry', $authenticate( $app ), function ( $qry ) use ( $app, $model ) {
         switch($qry){
             case "cars":
-                 $app->render( 'cars.php', [ 'model' => $model ] );
+                 $app->render( 'home.php', [ 'model' => $model ] );
             break;
             default:
                  $app->redirect( '/home/' );
