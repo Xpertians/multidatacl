@@ -73,7 +73,8 @@ $app->get( '/search/:driver', $authenticate($app), function ( $driver ) use ( $a
 $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $app, $model ) {
         $request    = $app->request();
         $body       = $request->getBody();
-        $input      = json_decode($body); 
+        $input      = json_decode($body);
+        var_dump($input);
         header('Content-type: application/json');
         echo json_encode( array(
           'qry'     => (string)$input->plate,
