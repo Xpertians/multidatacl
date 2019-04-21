@@ -44,7 +44,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 								<a href="#">Policial</a>
 							</div>
 						</div>
-						
+
 						<div id="#summary">
 							<h4>DETALLES</h4>
 							<table class="table table-bordered">

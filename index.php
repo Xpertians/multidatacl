@@ -77,7 +77,7 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
         var_dump($input);
         header('Content-type: application/json');
         echo json_encode( array(
-          'qry'     => (string)$input->plate,
+          'qry'     => (string)$input->qry,
           'driver'  => $driver
         ));
 
