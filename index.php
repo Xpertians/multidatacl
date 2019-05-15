@@ -82,8 +82,8 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
         $input      = json_decode($body);
 
         $guzzle   = $app->container->httpClient;
-        $response = $guzzle->request('GET', 'https://opendatacollector.com/api/token', [
-          'auth' => ['user', 'pass']
+        $response = $guzzle->request('POST', 'https://opendatacollector.com/api/token', [
+          'auth' => ['FQyDaVCyTOvCOHRSN5TeR8', 'bZhlyXsAuzm9oyb5b4DAx817vbJXdKW5']
         ]);
         var_dump($response);
 
