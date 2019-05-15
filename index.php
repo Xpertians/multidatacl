@@ -4,6 +4,8 @@ ini_set('display_errors', 1);
 
 require 'vendor/autoload.php';
 
+use GuzzleHttp\Client;
+
 $app = new \Slim\Slim();
 
 $app->config(
@@ -11,7 +13,6 @@ $app->config(
         'templates.path' => 'templates'
     ]
 );
-
 
 // Set singleton value
 $app->container->singleton( 'db', function () {
@@ -30,7 +31,12 @@ $app->container->singleton( 'hybridInstance', function () {
     return $instance;
 });
 
-$model = new \Model\App_Model( $app->db );
+
+$app->container['httpClient'] = function ($cntr) {
+    return new Client();
+};
+
+$model  = new \Model\App_Model( $app->db );
 
 $authenticate = function ( $app ) {
     return function () use ( $app ) {
@@ -74,8 +80,16 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
         $request    = $app->request();
         $body       = $request->getBody();
         $input      = json_decode($body);
+
+        $guzzle   = $app->container->httpClient;
+        $response = $guzzle->request('GET', 'https://opendatacollector.com/api/token', [
+          'auth' => ['user', 'pass']
+        ]);
+        var_dump($response);
+
+
         //$client     = new GuzzleHttp\Client();
-        use Guzzle\Http\Client;
+        /*
         $http       = new Client('https://opendatacollector.com/api/token', array(
             'request.options' => array(
                 'exceptions' => false,
@@ -83,6 +97,7 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
         ));
         $response = $request->send();
         echo $response->getBody();
+        */
         /*
         header('Content-type: application/json');
         echo json_encode( array(
