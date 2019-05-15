@@ -82,22 +82,26 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
         $input      = json_decode($body);
 
         $guzzle   = $app->container->httpClient;
-        $response = $guzzle->request('POST', 'https://opendatacollector.com/api/token', [
-          'auth' => ['FQyDaVCyTOvCOHRSN5TeR8', 'bZhlyXsAuzm9oyb5b4DAx817vbJXdKW5']
-        ]);
-        var_dump($response);
+
+        $clientId = "FQyDaVCyTOvCOHRSN5TeR8";
+        $secretKey  = "bZhlyXsAuzm9oyb5b4DAx817vbJXdKW5";
+        $url    = "https://opendatacollector.com/api/token";
 
 
-        //$client     = new GuzzleHttp\Client();
-        /*
-        $http       = new Client('https://opendatacollector.com/api/token', array(
-            'request.options' => array(
-                'exceptions' => false,
-            )
-        ));
-        $response = $request->send();
-        echo $response->getBody();
-        */
+        $response = $guzzle->post($url, [
+            'headers' =>  [
+              'User-Agent' => 'testing/1.0',
+            'Content-Type' => 'application/x-www-form-urlencoded; charset=utf-8'
+          ],
+              'form_params' => [
+                  'client_id' => $clientId,
+                  'client_secret' => $secretKey,
+                  'grant_type' => 'client_credentials',
+              ]
+          ]);
+        $body = json_decode((string) $response->getBody()->getContents(), true);
+        var_dump($body["access_token"]);
+
         /*
         header('Content-type: application/json');
         echo json_encode( array(
