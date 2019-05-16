@@ -13,6 +13,10 @@
     }
   }
   
+.navbar{
+    border-bottom:1px solid #1B3C81;
+}
+  
 .navbar-toggler{
     width: 47px;
     height: 34px;
