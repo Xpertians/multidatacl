@@ -46,7 +46,7 @@
   <body>
     <header>
   <nav class="navbar navbar-expand-md fixed-top" style="background-color: #ffffff;">
-    <a class="navbar-brand" href="/"><img src="/assets/imgs/multidatsa.png" height="50px"></a>
+    <a class="navbar-brand" href="/"><img src="/assets/imgs/multidata.png" height="50px"></a>
     
     <button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" aria-expanded="false" >
 	    <span class="line"></span> 
@@ -56,19 +56,18 @@
     
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="https://odc.xpertians.com/" target="_blank">Documentaci&oacute;n</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="https://opendatacollector.com/" target="_blank">API</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" href="https://github.com/xpertians/multidatacl" target="_blank">GitHub</a>
         </li>
       </ul>
       <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+        <button class="btn btn-primary my-2 my-sm-0" type="submit">Ingresar</button>
       </form>
     </div>
   </nav>
@@ -163,8 +162,17 @@
 
   <!-- FOOTER -->
   <footer class="container">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p class="float-right">
+	<small>Fuente de datos: <br>
+	<a href="https://OpenDataCollector.com" target="_blank">
+	    OpenDataCollector
+	</a>
+	</small>
+    </p>
+    <p>
+	&copy; <?php echo date('Y'); ?> Xpertians &middot; 
+	<a href="https://odc.xpertians.com/docs/terminos-de-servicio/" target="_blank">T&eacute;rminos de Uso</a> &middot; <a href="https://github.com/Xpertians/odc/issues/new" target="_blank">Ayuda</a>
+    </p>
   </footer>
 </main>
 <script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
