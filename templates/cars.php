@@ -12,8 +12,13 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 
 <div class="container">
 
-  <div class="row py-5">
-    
+  <div class="py-5">
+    <h2 style="color:#F0AD4E">
+        <i class="fa fa-car" style="color:#F0AD4E"></i>
+        Veh&iacute;culos
+    </h2>
+  </div>
+  <div class="row">
     <div class="col-md-4 order-md-1 mb-4">
       <h4 class="d-flex justify-content-between align-items-center mb-3">
         <span class="text-muted">Ingresa el dato a buscar</span>
@@ -28,7 +33,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
           </div>
         </div>
       </form>
-      
+    
     </div>
     
     <div class="col-md-8 order-md-2">

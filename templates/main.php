@@ -68,19 +68,19 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <i class="fa fa-car fa-5x" style="color:#F0AD4E"></i>
+        <h2>Veh&iacute;culos</h2>
+        <p><a class="btn btn-outline-primary" href="/login" role="button">Consultar &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <i class="fa fa-user fa-5x" style="color:#5CB85C"></i>
+        <h2>Personas</h2>
+        <p><a class="btn btn-outline-primary" href="/login" role="button">Consultar &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <i class="fa fa-briefcase fa-5x" style="color:#428BCA"></i>
+        <h2>Empresas</h2>
+        <p><a class="btn btn-outline-primary" href="/login" role="button">Consultar &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
