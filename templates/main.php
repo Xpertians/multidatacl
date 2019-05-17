@@ -1,50 +1,13 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Carousel Template · Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="/assets/css/carousel.css" rel="stylesheet">
-    <link href="/assets/css/main.css" rel="stylesheet">
-    
-  </head>
-  <body>
-    <header>
-  <nav class="navbar navbar-expand-md fixed-top" style="background-color: #ffffff;">
-    <a class="navbar-brand" href="/"><img src="/assets/imgs/multidata.png" height="50px"></a>
-    
-    <button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" aria-expanded="false" >
-	    <span class="line"></span> 
-	    <span class="line"></span> 
-	    <span class="line" style="margin-bottom: 0;"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="https://odc.xpertians.com/" target="_blank">Documentaci&oacute;n</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://opendatacollector.com/" target="_blank">API</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/xpertians/multidatacl" target="_blank">GitHub</a>
-        </li>
-      </ul>
-      <form class="form-inline mt-2 mt-md-0">
-        <button class="btn btn-primary my-2 my-sm-0" type="submit">Ingresar</button>
-      </form>
-    </div>
-  </nav>
-</header>
-
+<?php include_once("header.php");?>
+</head>
+<?php
+if (isset( $identifier_session ) && ! empty( $identifier_session )) {
+	include_once('navbar_private.php');
+}else{
+	include_once('navbar_public.php');
+}
+?>
+<body>
 <main role="main">
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -124,24 +87,7 @@
   </div><!-- /.container -->
 
 
-  <!-- FOOTER -->
-  <footer class="container">
-    <hr class="featurette-divider">
-    <p class="float-right">
-	<small>Fuente de datos: <br>
-	<a href="https://OpenDataCollector.com" target="_blank">
-	    OpenDataCollector
-	</a>
-	</small>
-    </p>
-    <p>
-	&copy; <?php echo date('Y'); ?> Xpertians &middot; 
-	<a href="https://odc.xpertians.com/docs/terminos-de-servicio/" target="_blank">T&eacute;rminos de Uso</a> &middot; <a href="https://github.com/Xpertians/odc/issues/new" target="_blank">Ayuda</a>
-    </p>
-  </footer>
-  
-</main>
-<script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
-<script src="/assets/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<?php include_once("prefooter.php");?>
+
+    </div>
+<?php include_once("footer.php");?>

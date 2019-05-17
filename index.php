@@ -49,7 +49,13 @@ $authenticate = function ( $app ) {
 };
 
 $app->get( '/', function () use ( $app ) {
-        $app->render( 'main.php' );
+        $app->hybridInstance;
+        $session_identifier = Hybrid_Auth::storage()->get('user');
+        if (is_null( $session_identifier )) {
+            $app->render( 'main.php' );
+        }else{
+            $app->redirect( '/home/' );
+        }
     }
 );
 
@@ -57,7 +63,7 @@ $app->get( '/logout/', function () use ( $app, $model ) {
         $app->hybridInstance;
         $model->logout_user();
         Hybrid_Auth::logoutAllProviders();
-        $app->redirect( '/login/' );
+        $app->redirect( '/' );
     }
 );
 
