@@ -56,3 +56,85 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+/* Buttons */
+
+.site-btn {
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 16px;
+	border-radius: 50px;
+	font-family: "Futura", sans-serif;
+	min-width: 170px;
+	text-align: center;
+	border: 2px solid #7ad4cc;
+	cursor: pointer;
+	color: #fff;
+    text-decoration: none;
+}
+
+.site-btn:hover {
+	color: #fff;
+    text-decoration: none;
+}
+
+.boxhead a {
+    text-decoration: none;
+}
+
+.site-btn.no-radius {
+	border-radius: 2px;
+}
+
+.site-btn.sb-full-- {
+	display: block;
+	width: 100%;
+	border-radius: 0;
+}
+
+.site-btn.sb-gradients {
+	padding: 17px 32px;
+	border: none;
+	color: #fff;
+}
+
+.site-btn.sb-gradients.sbg-line {
+	color: #20509e;
+	z-index: 1;
+}
+
+.site-btn.sb-gradients.sbg-line:after {
+	position: absolute;
+	content: '';
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
+	background: #fff;
+	top: 2px;
+	left: 2px;
+	z-index: -1;
+	border-radius: 50px;
+}
+
+.site-btn.sb-gradients.sbg-line:hover {
+	color: #20509e;
+}
+
+.gradient-bg,
+.site-btn.sb-gradients,
+.member-social a:hover,
+.single-blog-page .social-share a:hover,
+.comment .comment-content .c-btn:hover,
+.comment-form label {
+	/* FF3.6-15 */
+	/* Chrome10-25,Safari5.1-6 */
+	background: -webkit-gradient(linear, left top, right top, from(#3e2bce), color-stop(100%, #2dd3aa), color-stop(100%, #2dd3aa), to(#2dd3aa));
+	background: -o-linear-gradient(left, #3e2bce 0%, #2dd3aa 100%, #2dd3aa 100%, #2dd3aa 100%);
+	background: linear-gradient(to right, #3e2bce 0%, #2dd3aa 100%, #2dd3aa 100%, #2dd3aa 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e2bce', endColorstr='#2dd3aa', GradientType=1);
+	/* IE6-9 */
+}
+

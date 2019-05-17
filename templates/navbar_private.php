@@ -1,23 +1,35 @@
-  <!-- Header section -->
-	<header class="header-section clearfix">
-		<div class="container-fluid">
-			<a href="/" class="site-logo">
-        <img src="<?=$model->getAvatarUrl( $identifier_session );?>" class="rounded-circle" height="40px;">
-        <?=$model->getFirstName( $identifier_session );?> <?=$model->getLastName( $identifier_session );?>
-			</a>
-			<div class="responsive-bar"><i class="fa fa-bars"></i></div>
-			<a href="" class="user"><i class="fa fa-user"></i></a>
-      <a href="/logout" class="site-btn btn-primary">
-        <b>Desconectarse</b>
-      </a>
-			<nav class="main-menu">
-				<ul class="menu-list">
-          <li><a href="/"><b>Principal</b></a></li>
-          <li><a href="/home/cars"><i class="fa fa-car"></i> <b>Veh&iacute;culos</b></a></li>
-          <li><a href="/home"><i class="fa fa-user"></i> <b>Personas</b> (Pronto)</a></li>
-          <li><a href="/home"><i class="fa fa-briefcase"></i> <b>Empresas</b> (Pronto)</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<!-- Header section end -->
+<!-- Header section -->
+<header>
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #ffffff;">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/imgs/multidata.png" height="50px">
+        </a>
+        <button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" aria-expanded="false" >
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line" style="margin-bottom: 0;"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home/cars" target="_self">Veh&iacute;culos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="/" target="_self"><b>Personas</b> (Pronto)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="/" target="_self"><b>Empresas</b> (Pronto)</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <img src="<?=$model->getAvatarUrl( $identifier_session );?>" class="rounded-circle" height="40px;">
+		<?=$model->getFirstName( $identifier_session );?> <?=$model->getLastName( $identifier_session );?>
+		<a href="/logout" class="site-btn btn-primary">
+		    <b>Desconectarse</b>
+		</a>
+            </form>
+        </div>
+    </nav>
+</header>
+<!-- Header section end -->

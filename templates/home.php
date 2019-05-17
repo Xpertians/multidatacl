@@ -7,84 +7,88 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 	include_once('navbar_public.php');
 }
 ?>
-//Requires Modification
-<section class="page-info-section">
-	<div class="container">
-		<h2><i class="fa fa-car" onclick="window.location.href='/warpit/html/cars/';"></i> Veh&iacute;culos</h2>
-		<div class="site-beradcamb">
-			<a href="/">Principal</a>
-			<span><i class="fa fa-angle-right"></i> Veh&iacute;culos</span>
-		</div>
-	</div>
-</section>
+
+<body>
+<main role="main">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>Example headline.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h1>One more for good measure.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
 
-<!-- Blog section -->
-<section class="single-blog-page spad">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 col-md-6 sideber pt-5 pt-lg-0">
-				<div class="widget-area">
-					<h4 class="widget-title">Busqueda de vehículos</h4>
-					<p>Ingrese la patente a buscar, para patentes de motos debe agregar un 0, por ejemplo AB123 debe ser AB0123.</p>
-					<form class="widget-subscribe-from">
-						<input type="text" id="qryValue" placeholder="AB0123">
-						<input type="hidden" id="qryType" value="car">
-						<button class="site-btn sb-full-- sb-gradients" id="runSearch">Buscar Patente</button>
-					</form>
-				</div>
-			</div>
-			<div class="col-lg-8">
-				<div class="blog-item bi-feature">
-					<div class="blog-text">
-						<h2 class="blog-title"><a href="">Resultados de su busqueda</a></h2>
-						<div class="post-meta">
-							<div class="post-tags">
-								<a href="#">Detalles</a>
-								<a href="#">Propietarios</a>
-								<a href="#">Policial</a>
-							</div>
-						</div>
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
 
-						<div id="#summary">
-							<h4>DETALLES</h4>
-							<table class="table table-bordered">
-							  <thead>
-							    <tr>
-							      <th scope="col">#</th>
-							      <th scope="col">First</th>
-							      <th scope="col">Last</th>
-							    </tr>
-							  </thead>
-							  <tbody>
-							    <tr>
-							      <th scope="row">1</th>
-							      <td>Mark</td>
-							      <td>Otto</td>
-							    </tr>
-							    <tr>
-							      <th scope="row">2</th>
-							      <td>Jacob</td>
-							      <td>Thornton</td>
-							    </tr>
-							    <tr>
-							      <th scope="row">3</th>
-							      <td colspan="2">Larry the Bird</td>
-							    </tr>
-							  </tbody>
-							</table>
-						</div>
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2>Heading</h2>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2>Heading</h2>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2>Heading</h2>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
 
 
-					</div>
-				</div>
-			</div>
+<?php include_once("prefooter.php");?>
 
-		</div>
-	</div>
-</section>
-
-<?php
-include_once("facts.php");
-include_once("footer.php");
-?>
+    </div>
+<?php include_once("footer.php");?>

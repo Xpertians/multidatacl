@@ -48,8 +48,8 @@ $authenticate = function ( $app ) {
     };
 };
 
-$app->get( '/', $authenticate($app), function () use ( $app ) {
-        $app->redirect( '/home/' );
+$app->get( '/', function () use ( $app ) {
+        $app->render( 'main.php' );
     }
 );
 

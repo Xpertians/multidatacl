@@ -1,74 +1,31 @@
 <?php
-$identifier_session = !empty( Hybrid_Auth::storage() ) ? Hybrid_Auth::storage()->get( 'user' ) : null;
 include_once("header.php");
-if (isset( $identifier_session ) && ! empty( $identifier_session )) {
-	include_once('navbar_private.php');
-}else{
-	include_once('navbar_public.php');
+?>
+<link href="/assets/css/login.css" rel="stylesheet">
+</head>
+<body class="text-center">
+<form class="form-signin">
+	<a href="/">
+		<img class="mb-4" src="/assets/imgs/multidata.png" alt="" height="65px">
+    </a>
+    <h1 class="h3 mb-3 font-weight-normal">Ingresa en segundos</h1>
+    <p>
+		<small>
+			No necesitas registrarte para acceder.
+		</small>
+	</p>
+    <a href="/login/google" class="site-btn btn-primary">
+      <img src="/assets/imgs/google.png" height=20px> Ingresar con <b>Google</b>
+    </a>
+    <hr>
+    <button class="btn btn-xs btn-outline-danger" type="button">&laquo; volver</button>
+    <p class="mt-5 mb-3 text-muted">&copy; <?php echo date('Y'); ?> Xpertians</p>
+</form>
+
+<?php
+if(isset($_GET['err']) && !empty($_GET['err'])) {
+	echo '<center><a href="/">Ha ocurrido un error, intente nuevamente.</a></center>';
 }
 ?>
-
-	<!-- Hero section -->
-	<section class="hero-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 hero-text">
-					<h2>Datos abiertos<br> <span>simplificado</span>.</h2>
-					<h4>Transformamos datos irrelevantes en informaci&oacute;n de valor.</h4>
-				</div>
-				<div class="col-md-6">
-					<img src="/assets/imgs/laptop.png" class="laptop-image" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Hero section end -->
-
-
-	<!-- Process section -->
-	<section class="process-section spad">
-		<div class="container">
-			<div class="section-title text-center">
-				<h2>Cómo funciona</h2>
-				<p>Procesamos datos abiertos de fuentes públicas para generar informaci&oacute;n &uacute;til para la ciudadan&iacute;a.</p>
-			</div>
-			<div class="row">
-				<div class="col-md-4 process">
-					<div class="process-step">
-						<figure class="process-icon">
-							<i class="fa fa-cloud-download fa-5x"></i>
-						</figure>
-						<br>
-						<h4>Recopilamos</h4>
-						<p>Buscamos datos abiertos disponibles bajo la Ley de Transparencia o fuentes p&uacute;blicas.</p>
-					</div>
-				</div>
-				<div class="col-md-4 process">
-					<div class="process-step">
-						<figure class="process-icon">
-							<i class="fa fa-cogs fa-5x"></i>
-						</figure>
-						<br>
-						<h4>Procesamos</h4>
-						<p>Usamos "Machine Learning" para crear relaciones y enriquecer la informaci&oacute;n,</p>
-					</div>
-				</div>
-				<div class="col-md-4 process">
-					<div class="process-step">
-						<figure class="process-icon">
-							<i class="fa fa-hand-spock-o fa-5x"></i>
-						</figure>
-						<br>
-						<h4>P&uacute;blicamos</h4>
-						<p>Los resultados estan disponibles para uso privado o academico. </p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Process section end -->
-
-	<?php
-	include_once("facts.php");
-	include_once("footer.php");
-	?>
+<?php
+include_once("footer.php");
