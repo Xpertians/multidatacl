@@ -13,7 +13,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/home/cars" target="_self">Veh&iacute;culos</a>
+                    <a class="nav-link" href="/home/cars" target="_self"><b>Veh&iacute;culos</b></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="/" target="_self"><b>Personas</b> (Pronto)</a>
