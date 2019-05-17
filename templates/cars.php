@@ -22,24 +22,29 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
     
     <div class="col-md-4 order-md-1 mb-4">
       <h4 class="d-flex justify-content-between align-items-center mb-3">
-        <span class="text-muted">Your cart</span>
+        <span class="text-muted">Ingresa el dato a buscar</span>
       </h4>
       
       <form class="card p-2">
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Promo code">
+          <input type="text" class="form-control" id="qryValue" placeholder="AB0123">
+          <input type="hidden" id="qryType" value="car">
           <div class="input-group-append">
-            <button type="submit" class="btn btn-secondary">Search</button>
+            <button class="btn btn-secondary" id="runSearch">Buscar</button>
           </div>
         </div>
       </form>
-
+      
     </div>
     
     <div class="col-md-8 order-md-2">
-      <h4 class="mb-3">Billing address</h4>
+      <h4 class="mb-3">Resultados</h4>
       <form class="needs-validation" novalidate>
         <div class="row">
+            <div id="#summary">
+                &nbsp;
+            </div>
+
           <div class="col-md-6 mb-3">
             <label for="firstName">First name</label>
             <input type="text" class="form-control" id="firstName" placeholder="" value="" required>

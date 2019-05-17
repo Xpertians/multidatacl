@@ -13,10 +13,10 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://odc.xpertians.com/" target="_blank"><b>Documentaci&oacute;n</b></a>
+                    <a class="nav-link" href="https://opendatacollector.com/" target="_blank"><b>API</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://opendatacollector.com/" target="_blank"><b>API</b></a>
+                    <a class="nav-link" href="https://odc.xpertians.com/" target="_blank"><b>Documentaci&oacute;n</b></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://github.com/xpertians/multidatacl" target="_blank"><b>GitHub</b></a>
