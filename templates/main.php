@@ -18,43 +18,43 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-left">
-            <h1>Example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="/assets/imgs/ca_opengov.jpg">
         <div class="container">
           <div class="carousel-caption text-right">
-            <h1>One more for good measure.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            <h1>La mejor información siempre disponible</h1>
+            <p>MultiDATA Chile es la base de datos referencial, comunitaria y abierta más grande del país.</p>
+            <p><a class="btn btn-lg btn-primary" href="/login" role="button"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingresar</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/imgs/ca_opendata.jpg">
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h1>Datos abiertos y p&uacute;blicos</h1>
+            <p>Con la patente del vehículo podrás encontrar propietarios, multas o si tiene encargo por robo.</p>
+            <p><a class="btn btn-lg btn-primary" href="/login" role="button"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Consultar</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/imgs/ca_opensource.jpg">
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h1>MultiDATACL es Open Source</h1>
+            <p>Descarga el c&oacute;digo de nuestra web e instala tu propia instancia conectando nuestra API.</p>
+            <p><a class="btn btn-lg btn-primary" href="https://github.com/xpertians/multidatacl" target="_blank" role="button"><i class="fa fa-github" aria-hidden="true"></i> Descargar</a></p>
           </div>
         </div>
       </div>
     </div>
     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+      <span class="sr-only">Anterior</span>
     </a>
     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+      <span class="sr-only">Siguiente</span>
     </a>
   </div>
 

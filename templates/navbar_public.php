@@ -23,7 +23,7 @@
                 </li>
             </ul>
             <form class="form-inline mt-2 mt-md-0" action="/login">
-                <button class="btn btn-primary my-2 my-sm-0" type="submit">Ingresar</button>
+                <button class="btn btn-primary my-2 my-sm-0" type="submit"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingresar</button>
             </form>
         </div>
     </nav>
