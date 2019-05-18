@@ -20,7 +20,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
       <div class="carousel-item active">
         <img src="/assets/imgs/ca_opengov.jpg">
         <div class="container">
-          <div class="carousel-caption text-right">
+          <div class="carousel-caption">
             <h1>La mejor información siempre disponible</h1>
             <p>MultiDATA Chile es la base de datos referencial, comunitaria y abierta más grande del país.</p>
             <p><a class="btn btn-lg btn-primary" href="/login" role="button"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingresar</a></p>
@@ -30,7 +30,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
       <div class="carousel-item">
         <img src="/assets/imgs/ca_opendata.jpg">
         <div class="container">
-          <div class="carousel-caption text-right">
+          <div class="carousel-caption">
             <h1>Datos abiertos y p&uacute;blicos</h1>
             <p>Con la patente del vehículo podrás encontrar propietarios, multas o si tiene encargo por robo.</p>
             <p><a class="btn btn-lg btn-primary" href="/login" role="button"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Consultar</a></p>
@@ -40,8 +40,8 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
       <div class="carousel-item">
         <img src="/assets/imgs/ca_opensource.jpg">
         <div class="container">
-          <div class="carousel-caption text-right">
-            <h1>MultiDATACL es Open Source</h1>
+          <div class="carousel-caption">
+            <h1>MultiDATA es Open Source</h1>
             <p>Descarga el c&oacute;digo de nuestra web e instala tu propia instancia conectando nuestra API.</p>
             <p><a class="btn btn-lg btn-primary" href="https://github.com/xpertians/multidatacl" target="_blank" role="button"><i class="fa fa-github" aria-hidden="true"></i> Descargar</a></p>
           </div>
