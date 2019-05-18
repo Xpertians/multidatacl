@@ -15,7 +15,7 @@
       </p>
     </div>
     <div class="d-lg-none">
-    <p>
+    <p align="center">
         <a href="https://odc.xpertians.com/docs/terminos-de-servicio/" target="_blank">T&eacute;rminos de Uso</a> &middot;
         <a href="https://github.com/Xpertians/odc/issues/new" target="_blank">Ayuda</a><br>
         &copy; <?php echo date('Y'); ?> Xpertians
