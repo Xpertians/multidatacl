@@ -21,7 +21,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
         <img src="/assets/imgs/ca_opengov.jpg">
         <div class="container">
           <div class="carousel-caption">
-            <h1>La mejor información siempre disponible</h1>
+            <h1>La mejor información disponible</h1>
             <p>MultiDATA Chile es la base de datos referencial, comunitaria y abierta más grande del país.</p>
             <p><a class="btn btn-lg btn-primary" href="/login" role="button"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingresar</a></p>
           </div>
@@ -31,8 +31,8 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
         <img src="/assets/imgs/ca_opendata.jpg">
         <div class="container">
           <div class="carousel-caption">
-            <h1>Datos abiertos y p&uacute;blicos</h1>
-            <p>Con la patente del vehículo podrás encontrar propietarios, multas o si tiene encargo por robo.</p>
+            <h1>Data abierta y p&uacute;blica</h1>
+            <p>Con la patente del vehículo podrás encontrar propietarios, multas y encargo por robo.</p>
             <p><a class="btn btn-lg btn-primary" href="/login" role="button"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Consultar</a></p>
           </div>
         </div>
