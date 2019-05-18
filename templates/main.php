@@ -31,8 +31,8 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
         <img src="/assets/imgs/ca_opendata.jpg">
         <div class="container">
           <div class="carousel-caption">
-            <h1>Data abierta y p&uacute;blica</h1>
-            <p>Con la patente del vehículo podrás encontrar propietarios, multas y encargo por robo.</p>
+            <h1>100% data p&uacute;blica</h1>
+            <p>Usamos fuentes abiertas de datos p&uacute;blicos para generar informaci&oacute;n de valor.</p>
             <p><a class="btn btn-lg btn-primary" href="/login" role="button"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Consultar</a></p>
           </div>
         </div>
