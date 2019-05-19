@@ -83,75 +83,57 @@ $app->get( '/search/:driver', $authenticate($app), function ( $driver ) use ( $a
 );
 
 $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $app, $model ) {
+        $sTime      = time();
         $request    = $app->request();
         $body       = $request->getBody();
         $input      = json_decode($body);
 
-        $guzzle   = $app->container->httpClient;
+        $guzzle     = $app->container->httpClient;
 
-        $clientId = "FQyDaVCyTOvCOHRSN5TeR8";
+        $clientId   = "FQyDaVCyTOvCOHRSN5TeR8";
         $secretKey  = "bZhlyXsAuzm9oyb5b4DAx817vbJXdKW5";
-        $url    = "https://opendatacollector.com/api/token";
+        $url        = "https://opendatacollector.com/api/token";
 
-
-        $response = $guzzle->post($url, [
+        $response   = $guzzle->post(
+          $url,
+          [
             'headers' =>  [
-              'User-Agent' => 'testing/1.0',
-            'Content-Type' => 'application/x-www-form-urlencoded; charset=utf-8'
-          ],
-              'form_params' => [
-                  'client_id' => $clientId,
-                  'client_secret' => $secretKey,
-                  'grant_type' => 'client_credentials',
-              ]
-          ]);
-        $body = json_decode((string) $response->getBody()->getContents(), true);
+              'User-Agent'      => 'testing/1.0',
+              'Content-Type'    => 'application/x-www-form-urlencoded; charset=utf-8'
+            ],
+            'form_params' => [
+                'client_id'     => $clientId,
+                'client_secret' => $secretKey,
+                'grant_type'    => 'client_credentials',
+            ]
+          ]
+        );
+        $body        = json_decode((string) $response->getBody()->getContents(), true);
         var_dump($body["access_token"]);
 
-        /*
-        header('Content-type: application/json');
-        echo json_encode( array(
-          'qry'     => (string)$input->qry,
-          'driver'  => $driver
-        ));
-        */
-        echo '
-          <h4>DETALLES</h4>
-          <div class="post-meta">
-            <div class="post-tags">
-              <a href="#">Detalles</a>
-              <a href="#">Propietarios</a>
-              <a href="#">Policial</a>
-            </div>
-          </div>
-          <div class="details-table">
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td colspan="2">Larry the Bird</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        ';
+        $input      = json_decode(json_encode($input), true);
+        $input      = preg_replace("/[^a-zA-Z0-9]+/", "", $input['qry']);
+        $url        = "https://opendatacollector.com/api/exec/1542152652/".$input;
+
+        $response   = $guzzle->post(
+          $url,
+          [
+            'headers' =>  [
+              'User-Agent'      => 'testing/1.0',
+              'Content-Type'    => 'application/x-www-form-urlencoded; charset=utf-8'
+            ],
+            'form_params' => [
+                'access_token'  => $body["access_token"]
+            ]
+          ]
+        );
+
+        $eTime    = (time()-$sTime);
+
+        $body     = json_decode((string) $response->getBody()->getContents(), true);
+        var_dump($body);
+
+        $app->render( 'car_details.php' );
 
     }
 );

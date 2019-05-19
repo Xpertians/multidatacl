@@ -1,5 +1,6 @@
 $(function() {
     $('#runSearch').click(function(e) {
+    document.getElementById("#summary").innerHTML	= "";
 		e.preventDefault();
 		var dataPost	= { "qry": document.getElementById("qryValue").value}
 		var urlAjax		= "/search/"+document.getElementById("qryType").value;
