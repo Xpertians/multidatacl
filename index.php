@@ -109,7 +109,6 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
           ]
         );
         $body        = json_decode((string) $response->getBody()->getContents(), true);
-        var_dump($body["access_token"]);
 
         $input      = json_decode(json_encode($input), true);
         $input      = preg_replace("/[^a-zA-Z0-9]+/", "", $input['qry']);
@@ -129,12 +128,20 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
         );
 
         $eTime    = (time()-$sTime);
-
         $body     = json_decode((string) $response->getBody()->getContents(), true);
-        var_dump($body);
 
-        $app->render( 'car_details.php' );
-
+        if(array_key_exists('success', $body)){
+          if($body['success']){
+            $data     = reset($body["data"]);
+            $payload  = $data['payload'];
+            //var_dump($payload);
+            $app->render( 'car_details.php', $payload);
+          }else{
+            echo "ERR";
+          }
+        }else{
+          echo "ERR";
+        }
     }
 );
 
