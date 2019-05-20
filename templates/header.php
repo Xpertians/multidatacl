@@ -8,10 +8,12 @@
 	<meta name="description" content="MultiDATA - OpenDataCollector">
 	<meta name="keywords" content="MultiDATA, opendata, opendatacollector, autos, patentes, rutificador">
 
+		<script src="/assets/js/main.js"></script>
+
     <!-- Bootstrap core CSS -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
-    
+
     <!-- Custom styles for this template -->
     <link href="/assets/css/carousel.css" rel="stylesheet">
     <link href="/assets/css/main.css" rel="stylesheet">
