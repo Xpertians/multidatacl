@@ -29,16 +29,19 @@ $(function() {
 });
 
 
-$('qryValue').bind('keypress', function(e) {// Kami.2013.12.24.10:57 Allow only letters, numbers, and @ , . - _
-var allowedCode = [8, 13, 32, 44, 45, 46, 95];
-var charCode = (e.charCode) ? e.charCode : ((e.keyCode) ? e.keyCode :
-	  ((e.which) ? e.which : 0));
- if (charCode > 31 && (charCode < 64 || charCode > 90) &&
-	(charCode < 97 || charCode > 122) &&
-	(charCode < 48 || charCode > 57) &&
-	(allowedCode.indexOf(charCode) == -1)) {
-	e.preventDefault();
-	$('.alert-box.onerror').html('<h3>ALLOW CHARACTERS: a..z A..Z 0..9 - _ . , @</h3>').fadeIn();
-	return false;
- }
-});
+
+var specialKeys = new Array();
+specialKeys.push(8);  //Backspace
+specialKeys.push(9);  //Tab
+specialKeys.push(46); //Delete
+specialKeys.push(36); //Home
+specialKeys.push(35); //End
+specialKeys.push(37); //Left
+specialKeys.push(39); //Right
+
+function IsAlphaNumeric(e) {
+   var keyCode = e.keyCode == 0 ? e.charCode : e.keyCode;
+   var ret = ((keyCode >= 48 && keyCode <= 57) || (keyCode >= 65 && keyCode <= 90) || keyCode == 32 || (keyCode >= 97 && keyCode <= 122) || (specialKeys.indexOf(e.keyCode) != -1 && e.charCode != e.keyCode));
+   document.getElementById("error").style.display = ret ? "none" : "inline";
+   return ret;
+}
