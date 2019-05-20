@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-4 mb-3">
       <label for="plate"><b>Patente</b></label>
-      <input type="text" class="form-control" id="plate" placeholder="" value="<?php echo ($this->data['plate']);?>" disabled>
+      <input type="text" class="form-control" id="plate" placeholder="" value="<?php echo strtoupper($this->data['plate']);?>" disabled>
     </div>
 
     <div class="col-md-4 mb-3">
