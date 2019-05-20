@@ -111,7 +111,7 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
         $body        = json_decode((string) $response->getBody()->getContents(), true);
 
         $input      = json_decode(json_encode($input), true);
-        $input      = preg_replace("/[^a-zA-Z0-9]+/", "", $input['qry']);
+        $input      = strtoupper(preg_replace("/[^a-zA-Z0-9]+/", "", $input['qry']));
         $url        = "https://opendatacollector.com/api/exec/1542152652/".$input;
 
         $response   = $guzzle->post(
