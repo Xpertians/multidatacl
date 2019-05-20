@@ -1,10 +1,9 @@
-<?php //var_dump($this->data); ?>
 <form class="needs-validation" novalidate>
   <div class="row">
     <div class="col-md-4 mb-3">
       <label for="plate"><b>Patente</b></label>
       <input type="text" class="form-control" id="plate" placeholder="" value="<?php echo ($this->data['plate']);?>" disabled>
-    </div>s
+    </div>
 
     <div class="col-md-4 mb-3">
       <label for="year"><b>A&ntilde;o</b></label>
