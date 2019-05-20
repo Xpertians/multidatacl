@@ -8,7 +8,7 @@
 	<meta name="description" content="MultiDATA - OpenDataCollector">
 	<meta name="keywords" content="MultiDATA, opendata, opendatacollector, autos, patentes, rutificador">
 
-		<script src="/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
