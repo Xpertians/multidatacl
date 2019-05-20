@@ -1,7 +1,8 @@
 <?php
+$protocol = strtolower(substr($_SERVER["SERVER_PROTOCOL"],0,strpos( $_SERVER["SERVER_PROTOCOL"],'/'))).'://';
 return
     [
-        "base_url"   => "http://localhost:8000/hybrid.php",
+        "base_url"   => $protocol."://".$_SERVER['HTTP_HOST']."/hybrid.php",
         "providers"  => [
             "Google"   => [
                 "enabled" => true,

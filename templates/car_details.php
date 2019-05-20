@@ -4,7 +4,8 @@
     <div class="col-md-4 mb-3">
       <label for="plate"><b>Patente</b></label>
       <input type="text" class="form-control" id="plate" placeholder="" value="<?php echo ($this->data['plate']);?>" disabled>
-    </div>
+    </div>s
+
     <div class="col-md-4 mb-3">
       <label for="year"><b>A&ntilde;o</b></label>
       <input type="text" class="form-control" id="year" placeholder="" value="<?php echo ($this->data['year']);?>" disabled>
