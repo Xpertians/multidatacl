@@ -6,8 +6,8 @@ return
             "Google"   => [
                 "enabled" => true,
                 "keys"    => [
-                  "id" => "204025247100-7lefpfc4arp25fkfffnj2hg2bbd9imuj.apps.googleusercontent.com",
-                  "secret" => "pEiZ1DtkxUjWKiudNSQFLouu"
+                  "id"      => "",
+                  "secret"  => ""
                 ],
             ],
             "Facebook" => [

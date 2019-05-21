@@ -27,7 +27,7 @@ $app->container->singleton( 'db', function () {
 );
 
 $app->container->singleton( 'hybridInstance', function () {
-    $instance = new Hybrid_Auth('config.php');
+    $instance = new Hybrid_Auth('cfg_hybrid.php');
     return $instance;
 });
 
@@ -115,9 +115,10 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
         }else{
           $guzzle     = $app->container->httpClient;
 
-          $clientId   = "FQyDaVCyTOvCOHRSN5TeR8";
-          $secretKey  = "bZhlyXsAuzm9oyb5b4DAx817vbJXdKW5";
-          $url        = "https://opendatacollector.com/api/token";
+          $clientId   = "";
+          $secretKey  = "";
+          $odc        = "https://opendatacollector.com";
+          $url        = $odc."/api/token";
 
           $response   = $guzzle->post(
             $url,
