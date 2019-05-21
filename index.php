@@ -2,6 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+require 'cfg_odc.php';
 require 'vendor/autoload.php';
 
 use GuzzleHttp\Client;
@@ -114,10 +115,6 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
                 </p>";
         }else{
           $guzzle     = $app->container->httpClient;
-
-          $clientId   = "";
-          $secretKey  = "";
-          $odc        = "https://opendatacollector.com";
           $url        = $odc."/api/token";
 
           $response   = $guzzle->post(
