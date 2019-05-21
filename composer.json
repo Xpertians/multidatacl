@@ -1,0 +1,11 @@
+{
+    "require": {
+        "slim/slim": "2.*",
+        "hybridauth/hybridauth": "2.3.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+
+    "autoload": {
+        "psr-4": {"Model\\": "src/"}
+    }
+}
