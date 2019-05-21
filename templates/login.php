@@ -6,16 +6,16 @@ include_once("header.php");
 <body class="text-center">
 <form class="form-signin">
     <a href="/">
-	<img class="mb-4" src="/assets/imgs/multidata.png" alt="" height="65px">
+	     <img class="mb-4" src="/assets/imgs/multidata.png" alt="" height="65px">
     </a>
     <h1 class="h3 mb-3 font-weight-normal">Ingresa en segundos</h1>
     <p>
-	<small>
-	    No necesitas registrarte para acceder.
-	</small>
+    	<small>
+    	    No necesitas registrarte para acceder.
+    	</small>
     </p>
     <a href="/login/google" class="site-btn btn-primary">
-	<img src="/assets/imgs/google.png" height=20px> Ingresar con <b>Google</b>
+      <img src="/assets/imgs/google.png" height=20px> Ingresar con <b>Google</b>
     </a>
     <hr>
     <button class="btn btn-xs btn-outline-danger" type="button" onClick="window.location.href='/';">&laquo; volver</button>

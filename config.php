@@ -24,10 +24,10 @@ return
                 "keys"    => [ "key" => "", "secret" => "" ]
             ],
             "Github"   => array(
-                "enabled" => true,
+                "enabled" => false,
                 "keys"    => array(
-                    "id"     => "7fc2a3116c86b9dac673",
-                    "secret" => "1a3a1ba0c158a3e0cd1538b4f3c36fd6e6c10556"
+                    "id"     => "",
+                    "secret" => ""
                 ),
                 "wrapper" => [ "path" => "providers/GitHub.php", "class" => "Hybrid_Providers_GitHub" ]
             ),
