@@ -89,6 +89,7 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
 
         $input      = json_decode($body);
         $input      = json_decode(json_encode($input), true);
+
         $input      = strtoupper(preg_replace("/[^a-zA-Z0-9]+/", "", $input['qry']));
 
         if(strlen($input)==5){
@@ -133,9 +134,10 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
             ]
           );
 
-          $body        = json_decode((string) $response->getBody()->getContents(), true);
-          $url        = "https://opendatacollector.com/api/exec/1542152652/".$input;
+          $body       = json_decode((string) $response->getBody()->getContents(), true);
+          $token      = $body["access_token"];
 
+          $url        = "https://opendatacollector.com/api/exec/1541878145/".$input;
           $response   = $guzzle->post(
             $url,
             [
@@ -144,19 +146,44 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
                 'Content-Type'    => 'application/x-www-form-urlencoded; charset=utf-8'
               ],
               'form_params' => [
-                  'access_token'  => $body["access_token"]
+                  'access_token'  => $token
               ]
             ]
           );
-
           $eTime    = (time()-$sTime);
           $body     = json_decode((string) $response->getBody()->getContents(), true);
-
           if(array_key_exists('success', $body)){
             if($body['success']){
               $data     = reset($body["data"]);
               $payload  = $data['payload'];
-              //var_dump($payload);
+              $stolen   = $payload['stolen'];
+            }else{
+              $stolen   = 'Error al consultar';
+            }
+          }else{
+            $stolen   = 'Error al consultar';
+          }
+
+          $url        = "https://opendatacollector.com/api/exec/1542152652/".$input;
+          $response   = $guzzle->post(
+            $url,
+            [
+              'headers' =>  [
+                'User-Agent'      => 'testing/1.0',
+                'Content-Type'    => 'application/x-www-form-urlencoded; charset=utf-8'
+              ],
+              'form_params' => [
+                  'access_token'  => $token
+              ]
+            ]
+          );
+          $eTime    = (time()-$sTime);
+          $body     = json_decode((string) $response->getBody()->getContents(), true);
+          if(array_key_exists('success', $body)){
+            if($body['success']){
+              $data               = reset($body["data"]);
+              $payload            = $data['payload'];
+              $payload['stolen']  = $stolen;
               $app->render( 'car_details.php', $payload);
             }else{
               echo "ERR";
@@ -164,6 +191,7 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
           }else{
             echo "ERR";
           }
+
         }
     }
 );

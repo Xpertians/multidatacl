@@ -4,7 +4,6 @@
       <label for="plate"><b>Patente</b></label>
       <input type="text" class="form-control" id="plate" placeholder="" value="<?php echo strtoupper($this->data['plate']);?>" disabled>
     </div>
-
     <div class="col-md-4 mb-3">
       <label for="year"><b>A&ntilde;o</b></label>
       <input type="text" class="form-control" id="year" placeholder="" value="<?php echo ($this->data['year']);?>" disabled>
@@ -34,6 +33,22 @@
   <div class="mb-3">
     <label for="nChasis"><b>N&uacute;mero de Chasis</b></label>
     <input type="text" class="form-control" id="nChasis" placeholder="" value="<?php echo ($this->data['vin']);?>" disabled>
+  </div>
+
+  <div class="row">
+      <div class="col-md-4 mb-3">
+        <label for="plate"><b>Clase</b></label>
+        <input type="text" class="form-control" id="plate" placeholder="" value="<?php echo strtoupper($this->data['class']);?>" disabled>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="year"><b>Propietarios</b></label>
+        <input type="text" class="form-control" id="year" placeholder="" value="<?php echo count($this->data['related']);?>" disabled>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="color"><b>Carabineros</b></label>
+        <input type="text" class="form-control" id="color" placeholder="" value="<?php echo ($this->data['stolen']);?>" disabled>
+      </div>
+    </div>
   </div>
 
 </form>
