@@ -5,8 +5,8 @@
             <img src="/assets/imgs/multidata.png" height="50px">
         </a>
         <button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" aria-expanded="false" >
-            <span class="line"></span> 
-            <span class="line"></span> 
+            <span class="line"></span>
+            <span class="line"></span>
             <span class="line" style="margin-bottom: 0;"></span>
         </button>
 

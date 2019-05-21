@@ -1,6 +1,6 @@
 $(function() {
     $('#runSearch').click(function(e) {
-    document.getElementById("#summary").innerHTML	= "";
+    document.getElementById("#summary").innerHTML	= "<img src='/assets/imgs/loading.gif'>";//"Searching...";
 		e.preventDefault();
 		var dataPost	= { "qry": document.getElementById("qryValue").value}
 		var urlAjax		= "/search/"+document.getElementById("qryType").value;
@@ -12,9 +12,6 @@ $(function() {
 			data: JSON.stringify(dataPost) ,
 			error: function(data) {console.log(data); },
 			complete: function (res) {
-				//var response = JSON.stringify(res.responseText);
-				//document.getElementById("#summary").innerHTML	= response;
-				//alert(jQuery.parseJSON(response));
 				document.getElementById("#summary").innerHTML	= res.responseText;
 			},
 			dataType: 'json',

@@ -29,7 +29,10 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
           <input type="text" class="form-control" name="qryValue" id="qryValue" placeholder="AB0123" style="text-transform: uppercase" onkeypress="return IsAlphaNumeric(event);" ondrop="return false;" onpaste="return false;">
           <input type="hidden" name="qryType" id="qryType" value="car">
           <div class="input-group-append">
-            <button class="btn btn-secondary" id="runSearch">Buscar</button>
+            <button class="btn btn-secondary" id="runSearch">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							Buscar
+						</button>
           </div>
         </div>
       </form>

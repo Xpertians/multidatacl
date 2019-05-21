@@ -86,61 +86,84 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
         $sTime      = time();
         $request    = $app->request();
         $body       = $request->getBody();
+
         $input      = json_decode($body);
-
-        $guzzle     = $app->container->httpClient;
-
-        $clientId   = "FQyDaVCyTOvCOHRSN5TeR8";
-        $secretKey  = "bZhlyXsAuzm9oyb5b4DAx817vbJXdKW5";
-        $url        = "https://opendatacollector.com/api/token";
-
-        $response   = $guzzle->post(
-          $url,
-          [
-            'headers' =>  [
-              'User-Agent'      => 'testing/1.0',
-              'Content-Type'    => 'application/x-www-form-urlencoded; charset=utf-8'
-            ],
-            'form_params' => [
-                'client_id'     => $clientId,
-                'client_secret' => $secretKey,
-                'grant_type'    => 'client_credentials',
-            ]
-          ]
-        );
-        $body        = json_decode((string) $response->getBody()->getContents(), true);
-
         $input      = json_decode(json_encode($input), true);
         $input      = strtoupper(preg_replace("/[^a-zA-Z0-9]+/", "", $input['qry']));
-        $url        = "https://opendatacollector.com/api/exec/1542152652/".$input;
 
-        $response   = $guzzle->post(
-          $url,
-          [
-            'headers' =>  [
-              'User-Agent'      => 'testing/1.0',
-              'Content-Type'    => 'application/x-www-form-urlencoded; charset=utf-8'
-            ],
-            'form_params' => [
-                'access_token'  => $body["access_token"]
+        if(strlen($input)==5){
+          $isValid  = (preg_match("/[A-Za-z]{2}[0-9]{3}/",$input) === 1) ? true : false;
+          if($isValid){
+            $head   = substr($input, 0, 2);
+            $tail   = substr($input, -3);
+            $input  = $head."0".$tail;
+          }
+        }elseif(strlen($input)==6){
+          $isValid  = (preg_match("/[A-Za-z]{2}[A-Za-z0-9]{2}[0-9]{2}/",$input) === 1) ? true : false;
+        }else{
+          $isValid  = false;
+        }
+
+        if(!$isValid){
+          echo "<p align=center>
+                  <font color=red>
+                    <b>Formato patente incorrecto</b><br>
+                    Para patentes de motos debe agregar un 0, por ejemplo AB123 debe ser AB0123.
+                  </font>
+                </p>";
+        }else{
+          $guzzle     = $app->container->httpClient;
+
+          $clientId   = "FQyDaVCyTOvCOHRSN5TeR8";
+          $secretKey  = "bZhlyXsAuzm9oyb5b4DAx817vbJXdKW5";
+          $url        = "https://opendatacollector.com/api/token";
+
+          $response   = $guzzle->post(
+            $url,
+            [
+              'headers' =>  [
+                'User-Agent'      => 'testing/1.0',
+                'Content-Type'    => 'application/x-www-form-urlencoded; charset=utf-8'
+              ],
+              'form_params' => [
+                  'client_id'     => $clientId,
+                  'client_secret' => $secretKey,
+                  'grant_type'    => 'client_credentials',
+              ]
             ]
-          ]
-        );
+          );
 
-        $eTime    = (time()-$sTime);
-        $body     = json_decode((string) $response->getBody()->getContents(), true);
+          $body        = json_decode((string) $response->getBody()->getContents(), true);
+          $url        = "https://opendatacollector.com/api/exec/1542152652/".$input;
 
-        if(array_key_exists('success', $body)){
-          if($body['success']){
-            $data     = reset($body["data"]);
-            $payload  = $data['payload'];
-            //var_dump($payload);
-            $app->render( 'car_details.php', $payload);
+          $response   = $guzzle->post(
+            $url,
+            [
+              'headers' =>  [
+                'User-Agent'      => 'testing/1.0',
+                'Content-Type'    => 'application/x-www-form-urlencoded; charset=utf-8'
+              ],
+              'form_params' => [
+                  'access_token'  => $body["access_token"]
+              ]
+            ]
+          );
+
+          $eTime    = (time()-$sTime);
+          $body     = json_decode((string) $response->getBody()->getContents(), true);
+
+          if(array_key_exists('success', $body)){
+            if($body['success']){
+              $data     = reset($body["data"]);
+              $payload  = $data['payload'];
+              //var_dump($payload);
+              $app->render( 'car_details.php', $payload);
+            }else{
+              echo "ERR";
+            }
           }else{
             echo "ERR";
           }
-        }else{
-          echo "ERR";
         }
     }
 );
