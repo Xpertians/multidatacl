@@ -5,8 +5,8 @@
             <img src="/assets/imgs/multidata.png" height="50px">
         </a>
         <button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" aria-expanded="false" >
-            <span class="line"></span> 
-            <span class="line"></span> 
+            <span class="line"></span>
+            <span class="line"></span>
             <span class="line" style="margin-bottom: 0;"></span>
         </button>
 
@@ -31,7 +31,7 @@
 		    </a>
                 </li>
                 <li class="nav-item d-lg-none">
-                    <a class="nav-link" href="/" target="_self" style="color:#F1744A;">
+                    <a class="nav-link" href="/logout" target="_self" style="color:#F1744A;">
 			<i class="fa fa-sign-out"></i>
 			<b>Salir</b>
 		    </a>
