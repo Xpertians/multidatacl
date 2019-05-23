@@ -6,6 +6,8 @@ require 'cfg_odc.php';
 define("CLIENT_ID", $clientId, true);
 define("SECRET_KEY", $secretKey, true);
 define("ODC_SRV", $odc, true);
+define("ODC_DB", $dbname, true);
+
 
 require 'vendor/autoload.php';
 
@@ -22,7 +24,7 @@ $app->config(
 // Set singleton value
 $app->container->singleton( 'db', function () {
         try {
-          $db = new PDO("sqlite:db.sqlite3");
+          $db = new PDO("sqlite:".ODC_DB);
         } catch ( PDOException $e ) {
             die( 'Error!: ' . $e->getMessage() );
         }
