@@ -9,8 +9,10 @@ include_once("header.php");
 	     <img class="mb-4" src="/assets/imgs/multidata.png" alt="" height="65px">
     </a>
     <h1 class="h3 mb-3 font-weight-normal">Ingresa en segundos</h1>
-    <p align='justify'>
+    <p align='center'>
         MultiDATA no requiere registro, solo necesitas una cuenta en una red social.
+    </p>
+    <p align='justify'>
     	<small>
     	    Este cambio busca facilitar el accesso, mantener tus datos como privados, y simplificar nuestra web.
     	</small>
