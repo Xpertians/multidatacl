@@ -12,16 +12,15 @@ include_once("header.php");
     <p align='center'>
         MultiDATA no requiere registro, solo necesitas una cuenta en una red social.
     </p>
+    <a href="/login/google" class="site-btn btn-primary">
+      <img src="/assets/imgs/google.png" height=20px> Ingresar con <b>Google</b>
+    </a>
     <p align='justify'>
     	<small>
     	    Este cambio busca facilitar el accesso, mantener tus datos como privados, y simplificar nuestra web.
     	</small>
     </p>
-    <a href="/login/google" class="site-btn btn-primary">
-      <img src="/assets/imgs/google.png" height=20px> Ingresar con <b>Google</b>
-    </a>
     <hr>
-    <center><font color=red> <br> Adem&aacute;s ahora puedes descargar el c&oacute;digo fuente de MultiDATA desde GitHub.</font></center>
     <button class="btn btn-xs btn-outline-danger" type="button" onClick="window.location.href='/';">&laquo; volver</button>
     <p class="mt-5 mb-3 text-muted">&copy; <?php echo date('Y'); ?> Xpertians</p>
 </form>
