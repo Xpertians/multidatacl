@@ -15,6 +15,11 @@ include_once("header.php");
     <a href="/login/google" class="site-btn btn-primary">
       <img src="/assets/imgs/google.png" height=20px> Ingresar con <b>Google</b>
     </a>
+    <center>
+        <font color=red>
+            Este sitio web esta en proceso de verificaci&oacute;n por Google, por lo que se muestra un mensaje de error o de advertencia de seguridad. Es NORMAL, ser&aacute; eliminado una vez que Google complete el proceso.
+        </font>
+    </center>
     <hr>
     <p align='justify'>
     	<small>
