@@ -46,7 +46,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
       </div>
       <div id="loading_animation" style="display: none;">
           <center>
-              <img src='/assets/imgs/loading-icon-animated-gif-1.jpg' class="rounded">
+              <img src='/assets/imgs/loading.gif' class="rounded">
               </center>
         </div>
     </div>
