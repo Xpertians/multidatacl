@@ -44,7 +44,7 @@ if (isset( $identifier_session ) && ! empty( $identifier_session )) {
 			<div id="#summary">
           &nbsp;
       </div>
-      <div id="loading_animation" style="display: none;">
+      <div id="#loading_animation" style="display: none;">
           <center><img src='/assets/imgs/loading-icon-animated-gif-1.jpg' class="rounded"></center>
         </div>
     </div>
