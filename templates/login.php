@@ -21,12 +21,11 @@ include_once("header.php");
       <a href="/login/facebook" class="btn btn-outline-primary btn-block btn-lg">
         <img src="/assets/imgs/facebook.png" width="30"> <b>Facebook</b>
       </a>
-      <span class="fa fa-facebook"></span>
+      <span class="fa fa-facebook-square"></span>
     </p>
     <p align='center'>
       <a href="/login/github" class="btn btn-outline-secondary btn-block btn-lg">
-        <img src="/assets/imgs/github.png" width="30"> <b>Github</b>
-        <span class="fa fa-github"></span>
+        <span class="fa fa-github"></span> <b>Github</b>
       </a>
     </p>
     <!--
