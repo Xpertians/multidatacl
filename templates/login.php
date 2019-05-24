@@ -14,17 +14,17 @@ include_once("header.php");
     </p>
     <p align='center'>
       <a href="/login/facebook" class="btn btn-outline-primary btn-block btn-lg">
-        <img src="/assets/imgs/facebook.png" width="50"> <b>Facebook</b>
+        <img src="/assets/imgs/facebook.png" width="30"> <b>Facebook</b>
       </a>
     </p>
     <p align='center'>
       <a href="/login/twitter" class="btn btn-outline-info btn-block btn-lg">
-        <img src="/assets/imgs/twitter.png" width="50"> <b>Twitter</b>
+        <img src="/assets/imgs/twitter.png" width="40"> <b>Twitter</b>
       </a>
     </p>
     <p align='center'>
       <a href="/login/github" class="btn btn-outline-secondary btn-block btn-lg">
-        <img src="/assets/imgs/github.png" width="50"> <b>Github</b>
+        <img src="/assets/imgs/github.png" width="25"> <b>Github</b>
       </a>
     </p>
     <!--
