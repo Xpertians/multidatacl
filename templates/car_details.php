@@ -1,5 +1,3 @@
-<?php var_dump($this->data); exit;?>
-
 <form class="needs-validation" novalidate>
   <div class="row">
     <div class="col-md-4 mb-3">
