@@ -23,7 +23,8 @@
     </div>
     <div class="col-md-6 mb-3">
       <label for="modelName"><b>Modelo</b></label>
-      <input type="text" class="form-control" id="modelName" placeholder="" value="<?php echo ($this->data['model']);?>" disabled>
+      <input type="text" class="form-control" id="modelName" placeholder="" value="
+      <?php if(is_array($this->data['model'])){ echo ($this->data['model'][0]); }else{ echo ($this->data['model']); } ?>" disabled>
     </div>
   </div>
 
