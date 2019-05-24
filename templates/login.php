@@ -14,20 +14,19 @@ include_once("header.php");
     </p>
     <p align='center'>
       <a href="/login/twitter" class="btn btn-outline-info btn-block btn-lg">
-        <img src="/assets/imgs/twitter.png" width="30"> <b>Twitter</b>
+        <span class="fa fa-twitter"></span> <b>Twitter</b>
       </a>
     </p>
     <p align='center'>
       <a href="/login/facebook" class="btn btn-outline-primary btn-block btn-lg">
-        <span class="fa fa-twitter"></span>
         <img src="/assets/imgs/facebook.png" width="30"> <b>Facebook</b>
       </a>
-      <i class="icon-twitter-sign"></i> icon-twitter-sign
-      <span class="fa fa-twitter"></span>
+      <span class="fa fa-facebook"></span>
     </p>
     <p align='center'>
       <a href="/login/github" class="btn btn-outline-secondary btn-block btn-lg">
         <img src="/assets/imgs/github.png" width="30"> <b>Github</b>
+        <span class="fa fa-github"></span>
       </a>
     </p>
     <!--
