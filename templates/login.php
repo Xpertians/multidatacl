@@ -12,17 +12,17 @@ include_once("header.php");
     <p align='center'>
         MultiDATA no requiere registro, solo necesitas una cuenta en una red social.
     </p>
-    <p align='left'>
-      <a href="/login/facebook" class="btn btn-outline-primary btn-block btn-lg">
-        <img src="/assets/imgs/facebook.png" width="30"> <b>Facebook</b>
-      </a>
-    </p>
-    <p align='left'>
+    <p align='center'>
       <a href="/login/twitter" class="btn btn-outline-info btn-block btn-lg">
         <img src="/assets/imgs/twitter.png" width="40"> <b>Twitter</b>
       </a>
     </p>
-    <p align='left'>
+    <p align='center'>
+      <a href="/login/facebook" class="btn btn-outline-primary btn-block btn-lg">
+        <img src="/assets/imgs/facebook.png" width="30"> <b>Facebook</b>
+      </a>
+    </p>
+    <p align='center'>
       <a href="/login/github" class="btn btn-outline-secondary btn-block btn-lg">
         <img src="/assets/imgs/github.png" width="25"> <b>Github</b>
       </a>
