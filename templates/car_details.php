@@ -1,4 +1,4 @@
-<?php var_dump($this->data);?>
+<?php var_dump($this->data); exit;?>
 
 <form class="needs-validation" novalidate>
   <div class="row">
