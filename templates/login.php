@@ -18,7 +18,7 @@ include_once("header.php");
       </a>
     </p>
     <p align='center'>
-      <a href="/login/twitter" class="btn btn-outline-secondary btn-block">
+      <a href="/login/twitter" class="btn btn-info btn-block">
         <img src="/assets/imgs/twitter.png" width="20"> Ingresar con <b>Twitter</b>
       </a>
     </p>
