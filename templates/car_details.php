@@ -13,7 +13,6 @@
       <input type="text" class="form-control" id="color" placeholder="" value="<?php echo ($this->data['color']);?>" disabled>
     </div>
   </div>
-
   <div class="row">
     <div class="col-md-6 mb-3">
       <label for="brandName"><b>Marca</b></label>
@@ -25,17 +24,14 @@
       <?php if(is_array($this->data['model'])){ echo ($this->data['model'][0]); }else{ echo ($this->data['model']); } ?>" disabled>
     </div>
   </div>
-
   <div class="mb-3">
     <label for="nMotor"><b>N&uacute;mero de Motor</b></label>
     <input type="text" class="form-control" id="nMotor" placeholder="" value="<?php echo ($this->data['nmotor']);?>" disabled>
   </div>
-
   <div class="mb-3">
     <label for="nChasis"><b>N&uacute;mero de Chasis</b></label>
     <input type="text" class="form-control" id="nChasis" placeholder="" value="<?php echo ($this->data['vin']);?>" disabled>
   </div>
-
   <div class="row">
       <div class="col-md-4 mb-3">
         <label for="plate"><b>Clase</b></label>
@@ -51,5 +47,4 @@
       </div>
     </div>
   </div>
-
 </form>
