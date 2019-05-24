@@ -17,11 +17,11 @@ include_once("header.php");
         <span class="fa fa-twitter"></span> <b>Twitter</b>
       </a>
 
-      <a href="/login/facebook" class="btn btn-primary btn-lg">
+      <a href="/login/facebook" class="btn btn-primary">
         <span class="fa fa-facebook-square"></span> <b>Facebook</b>
       </a>
 
-      <a href="/login/github" class="btn btn-secondary btn-lg">
+      <a href="/login/github" class="btn btn-secondary">
         <span class="fa fa-github"></span> <b>Github</b>
       </a>
     </p>
