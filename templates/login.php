@@ -19,7 +19,7 @@ include_once("header.php");
     </p>
     <p align='center'>
       <a href="/login/facebook" class="btn btn-outline-primary btn-block btn-lg">
-        <i class="fa fa-twitter"></i>
+        <span class="fa fa-twitter"></span>
         <img src="/assets/imgs/facebook.png" width="30"> <b>Facebook</b>
       </a>
       <i class="icon-twitter-sign"></i> icon-twitter-sign
