@@ -18,6 +18,11 @@ include_once("header.php");
       </a>
     </p>
     <p align='center'>
+      <a href="/login/twitter" class="btn btn-outline-secondary btn-block">
+        <img src="/assets/imgs/twitter.png" width="20"> Ingresar con <b>Twitter</b>
+      </a>
+    </p>
+    <p align='center'>
       <a href="/login/github" class="btn btn-outline-secondary btn-block">
         <img src="/assets/imgs/github.png" width="20"> Ingresar con <b>GitHub</b>
       </a>
