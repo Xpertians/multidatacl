@@ -22,6 +22,7 @@ include_once("header.php");
         <img src="/assets/imgs/facebook.png" width="30"> <b>Facebook</b>
       </a>
       <i class="icon-twitter-sign"></i> icon-twitter-sign
+      <span class="fa fa-twitter"></span>
     </p>
     <p align='center'>
       <a href="/login/github" class="btn btn-outline-secondary btn-block btn-lg">
