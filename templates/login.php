@@ -12,10 +12,10 @@ include_once("header.php");
     <p align='center'>
         MultiDATA no requiere registro, solo necesitas una cuenta en una red social.
     </p>
-    <a href="/login/github" class="site-btn btn-outline-secondary">
+    <a href="/login/github" class="btn btn-outline-secondary">
       <img src="/assets/imgs/google.png" width="20"> Ingresar con <b>GitHub</b>
     </a>
-    <a href="/login/google" class="site-btn btn-primary">
+    <a href="/login/google" class="btn btn-primary">
       <img src="/assets/imgs/google.png" width="20"> Ingresar con <b>Google</b>
     </a>
     <center>
