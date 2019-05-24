@@ -21,7 +21,7 @@ include_once("header.php");
       <a href="/login/facebook" class="btn btn-outline-primary btn-block btn-lg">
         <img src="/assets/imgs/facebook.png" width="30"> <b>Facebook</b>
       </a>
-      <i class="icon-twitter"></i>
+      <i class="icon-twitter-sign"></i> icon-twitter-sign
     </p>
     <p align='center'>
       <a href="/login/github" class="btn btn-outline-secondary btn-block btn-lg">
