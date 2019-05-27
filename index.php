@@ -136,9 +136,11 @@ $app->post('/search/:driver', $authenticate( $app ), function ( $driver ) use ( 
                   'client_secret' => SECRET_KEY,
                   'grant_type'    => 'client_credentials'
               ]
-            ]
+            ],
+            ['verify' => false]
           );
-          $response->getCurlOptions()->set(CURLOPT_SSL_VERIFYPEER, False);
+          $response->getCurlOptions()->set(CURLOPT_SSL_VERIFYHOST, false);
+          $response->getCurlOptions()->set(CURLOPT_SSL_VERIFYPEER, false);
           $body       = json_decode((string) $response->getBody()->getContents(), true);
           $token      = $body["access_token"];
           $url        = ODC_SRV."/api/exec/1541878145/".$input;
