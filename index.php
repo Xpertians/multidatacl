@@ -40,7 +40,7 @@ $app->container->singleton( 'hybridInstance', function () {
 
 
 $app->container['httpClient'] = function ($cntr) {
-    return new Client(['verify' => false ]);
+    return new Client();
 };
 
 $model  = new \Model\App_Model( $app->db );
@@ -137,7 +137,9 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
               ],
               'config' => [
                   'curl' => [
-                      CURLOPT_SSLVERSION => 1
+                      CURLOPT_SSLVERSION => 1,
+                      CURLOPT_SSL_VERIFYPEER => false,
+                      CURLOPT_SSL_VERIFYHOST => false
                   ]
               ]
             ]
@@ -159,7 +161,9 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
               ],
               'config' => [
                   'curl' => [
-                      CURLOPT_SSLVERSION => 1
+                    CURLOPT_SSLVERSION => 1,
+                    CURLOPT_SSL_VERIFYPEER => false,
+                    CURLOPT_SSL_VERIFYHOST => false
                   ]
               ]
             ]
@@ -191,7 +195,9 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
               ],
               'config' => [
                   'curl' => [
-                      CURLOPT_SSLVERSION => 1
+                    CURLOPT_SSLVERSION => 1,
+                    CURLOPT_SSL_VERIFYPEER => false,
+                    CURLOPT_SSL_VERIFYHOST => false
                   ]
               ]
             ]
