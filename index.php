@@ -139,8 +139,6 @@ $app->post('/search/:driver', $authenticate( $app ), function ( $driver ) use ( 
             ],
             ['verify' => false]
           );
-          $response->getCurlOptions()->set(CURLOPT_SSL_VERIFYHOST, false);
-          $response->getCurlOptions()->set(CURLOPT_SSL_VERIFYPEER, false);
           $body       = json_decode((string) $response->getBody()->getContents(), true);
           $token      = $body["access_token"];
           $url        = ODC_SRV."/api/exec/1541878145/".$input;
@@ -224,6 +222,8 @@ $app->get( '/login/:idp', function ( $idp ) use ( $app, $model ) {
                 if ($register) {
                     $model->login_user( $identifier );
                     $app->redirect( '/home/' );
+                }else{
+                  $app->redirect( '/login/?err=42' );
                 }
             }
         } catch ( Exception $e ) {

@@ -55,7 +55,7 @@ class App_Model
     {
         try {
             $sql = "INSERT INTO users (identifier, email, first_name, last_name, avatar_url) VALUES (:identifier, :email, :first_name, :last_name, :avatar_url)";
-
+            
             $query = $this->conn->prepare($sql);
             $query->bindValue(':identifier', $identifier);
             $query->bindValue(':email', $email);
