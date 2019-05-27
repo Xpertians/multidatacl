@@ -134,6 +134,11 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
                   'client_id'     => CLIENT_ID,
                   'client_secret' => SECRET_KEY,
                   'grant_type'    => 'client_credentials',
+              ],
+              'config' => [
+                  'curl' => [
+                      CURLOPT_SSLVERSION => CURL_SSLVERSION_TLSv1_2
+                  ]
               ]
             ]
           );
@@ -151,6 +156,11 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
               ],
               'form_params' => [
                   'access_token'  => $token
+              ],
+              'config' => [
+                  'curl' => [
+                      CURLOPT_SSLVERSION => CURL_SSLVERSION_TLSv1_2
+                  ]
               ]
             ]
           );
@@ -178,6 +188,11 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
               ],
               'form_params' => [
                   'access_token'  => $token
+              ],
+              'config' => [
+                  'curl' => [
+                      CURLOPT_SSLVERSION => CURL_SSLVERSION_TLSv1_2
+                  ]
               ]
             ]
           );
