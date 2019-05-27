@@ -40,7 +40,9 @@ $app->container->singleton( 'hybridInstance', function () {
 
 
 $app->container['httpClient'] = function ($cntr) {
-    return new Client();
+    $client = new Client();
+    $client->setDefaultOption('verify', False);
+    return $client;
 };
 
 $model  = new \Model\App_Model( $app->db );
