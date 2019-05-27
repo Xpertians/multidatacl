@@ -41,7 +41,6 @@ $app->container->singleton( 'hybridInstance', function () {
 
 $app->container['httpClient'] = function ($cntr) {
     $client = new Client();
-    $client->setDefaultOption('verify', False);
     return $client;
 };
 
@@ -139,7 +138,7 @@ $app->post('/search/:driver', $authenticate( $app ), function ( $driver ) use ( 
               ]
             ]
           );
-
+          $response->getCurlOptions()->set(CURLOPT_SSL_VERIFYPEER, False);
           $body       = json_decode((string) $response->getBody()->getContents(), true);
           $token      = $body["access_token"];
           $url        = ODC_SRV."/api/exec/1541878145/".$input;
