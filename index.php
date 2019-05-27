@@ -133,7 +133,7 @@ $app->post('/search/:driver', $authenticate( $app ), function ( $driver ) use ( 
               'form_params' => [
                   'client_id'     => CLIENT_ID,
                   'client_secret' => SECRET_KEY,
-                  'grant_type'    => 'client_credentials',
+                  'grant_type'    => 'client_credentials'
               ]
             ]
           );
