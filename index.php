@@ -79,17 +79,17 @@ $app->get( '/login/', $authenticate( $app ), function () use ( $app ) {
     }
 );
 
-$app->get( '/search/', $authenticate($app), function () use ( $app ) {
+$app->get( '/search/', $authenticate( $app ), function () use ( $app ) {
         $app->redirect( '/home/' );
     }
 );
 
-$app->get( '/search/:driver', $authenticate($app), function ( $driver ) use ( $app, $model ) {
+$app->get( '/search/:driver', $authenticate( $app ), function ( $driver ) use ( $app, $model ) {
         $app->redirect( '/home/' );
     }
 );
 
-$app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $app, $model ) {
+$app->post('/search/:driver', $authenticate( $app ), function ( $driver ) use ( $app, $model ) {
         $sTime      = time();
         $request    = $app->request();
         $body       = $request->getBody();
@@ -121,7 +121,6 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
                 </p>";
         }else{
           $guzzle     = $app->container->httpClient;
-          $guzzle->setSslVerification(FALSE);
           $url        = ODC_SRV."/api/token";
 
           $response   = $guzzle->post(
@@ -135,21 +134,13 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
                   'client_id'     => CLIENT_ID,
                   'client_secret' => SECRET_KEY,
                   'grant_type'    => 'client_credentials',
-              ],
-              'config' => [
-                  'curl' => [
-                      CURLOPT_SSLVERSION => 1,
-                      CURLOPT_SSL_VERIFYPEER => false,
-                      CURLOPT_SSL_VERIFYHOST => false
-                  ]
               ]
             ]
           );
 
           $body       = json_decode((string) $response->getBody()->getContents(), true);
           $token      = $body["access_token"];
-
-          $url        = "https://opendatacollector.com/api/exec/1541878145/".$input;
+          $url        = ODC_SRV."/api/exec/1541878145/".$input;
           $response   = $guzzle->post(
             $url,
             [
@@ -159,13 +150,6 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
               ],
               'form_params' => [
                   'access_token'  => $token
-              ],
-              'config' => [
-                  'curl' => [
-                    CURLOPT_SSLVERSION => 1,
-                    CURLOPT_SSL_VERIFYPEER => false,
-                    CURLOPT_SSL_VERIFYHOST => false
-                  ]
               ]
             ]
           );
@@ -183,7 +167,7 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
             $stolen   = 'Error al consultar';
           }
 
-          $url        = "https://opendatacollector.com/api/exec/1542152652/".$input;
+          $url        = ODC_SRV."/api/exec/1542152652/".$input;
           $response   = $guzzle->post(
             $url,
             [
@@ -193,13 +177,6 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
               ],
               'form_params' => [
                   'access_token'  => $token
-              ],
-              'config' => [
-                  'curl' => [
-                    CURLOPT_SSLVERSION => 1,
-                    CURLOPT_SSL_VERIFYPEER => false,
-                    CURLOPT_SSL_VERIFYHOST => false
-                  ]
               ]
             ]
           );
