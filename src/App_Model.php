@@ -27,7 +27,7 @@ class App_Model
     public function identifier_exists($identifier)
     {
         try {
-            $sql    = 'SELECT identifier FROM users';
+            $sql    = 'SELECT identifier FROM `users`';
             $query  = $this->conn->query($sql);
             $result = $query->fetchAll(\PDO::FETCH_COLUMN, 0);
 
@@ -54,7 +54,7 @@ class App_Model
     public function register_user( $identifier, $email, $first_name, $last_name, $avatar_url )
     {
         try {
-            $sql = "INSERT INTO users (identifier, email, first_name, last_name, avatar_url) VALUES (:identifier, :email, :first_name, :last_name, :avatar_url)";
+            $sql = "INSERT INTO `users` (identifier, email, first_name, last_name, avatar_url) VALUES (:identifier, :email, :first_name, :last_name, :avatar_url)";
 
             $query = $this->conn->prepare($sql);
             $query->bindValue(':identifier', $identifier);
@@ -100,7 +100,7 @@ class App_Model
         if ( ! isset( $identifier )) {
             return;
         }
-        $query = $this->conn->prepare( "SELECT first_name FROM users WHERE identifier = :identifier" );
+        $query = $this->conn->prepare( "SELECT first_name FROM `users` WHERE identifier = :identifier" );
         $query->bindParam( ':identifier', $identifier );
         $query->execute();
         $result = $query->fetch( \PDO::FETCH_NUM );
@@ -121,7 +121,7 @@ class App_Model
         if ( ! isset( $identifier )) {
             return;
         }
-        $query = $this->conn->prepare( "SELECT last_name FROM users WHERE identifier = :identifier" );
+        $query = $this->conn->prepare( "SELECT last_name FROM `users` WHERE identifier = :identifier" );
         $query->bindParam( ':identifier', $identifier );
         $query->execute();
         $result = $query->fetch( \PDO::FETCH_NUM );
@@ -141,7 +141,7 @@ class App_Model
         if ( ! isset( $identifier )) {
             return;
         }
-        $query = $this->conn->prepare( "SELECT email FROM users WHERE identifier = :identifier" );
+        $query = $this->conn->prepare( "SELECT email FROM `users` WHERE identifier = :identifier" );
         $query->bindParam( ':identifier', $identifier );
         $query->execute();
         $result = $query->fetch( \PDO::FETCH_NUM );
@@ -162,7 +162,7 @@ class App_Model
         if ( ! isset( $identifier )) {
             return;
         }
-        $query = $this->conn->prepare( "SELECT avatar_url FROM users WHERE identifier = :identifier" );
+        $query = $this->conn->prepare( "SELECT avatar_url FROM `users` WHERE identifier = :identifier" );
         $query->bindParam( ':identifier', $identifier );
         $query->execute();
         $result = $query->fetch( \PDO::FETCH_NUM );
