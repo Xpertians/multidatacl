@@ -121,6 +121,7 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
                 </p>";
         }else{
           $guzzle     = $app->container->httpClient;
+          $guzzle->setSslVerification(FALSE);
           $url        = ODC_SRV."/api/token";
 
           $response   = $guzzle->post(
