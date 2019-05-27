@@ -137,7 +137,7 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
               ],
               'config' => [
                   'curl' => [
-                      CURLOPT_SSLVERSION => 6
+                      CURLOPT_SSLVERSION => 1
                   ]
               ]
             ]
@@ -159,7 +159,7 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
               ],
               'config' => [
                   'curl' => [
-                      CURLOPT_SSLVERSION => 6
+                      CURLOPT_SSLVERSION => 1
                   ]
               ]
             ]
@@ -191,7 +191,7 @@ $app->post('/search/:driver', $authenticate($app), function ( $driver ) use ( $a
               ],
               'config' => [
                   'curl' => [
-                      CURLOPT_SSLVERSION => 6
+                      CURLOPT_SSLVERSION => 1
                   ]
               ]
             ]
