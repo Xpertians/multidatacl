@@ -202,7 +202,7 @@ $app->post('/search/:driver', $authenticate( $app ), function ( $driver ) use ( 
     }
 );
 
-$app->get( '/login/:idp', function ( $idp ) use ( $app, $model ) {
+$app->get( '/login/:idp', $authenticate( $app ),  function ( $idp ) use ( $app, $model ) {
         try {
             $adapter      = $app->hybridInstance->authenticate( ucwords( $idp ) );
             $user_profile = $adapter->getUserProfile();
